@@ -1,5 +1,6 @@
 var App = {};
 (function($){
+	var DEFAULT_LANGUAGE_COOKIE_NAME = "language";
 
 	App.VideoStarted = function(){
 		if(!isMusicOn()) return;
@@ -17,6 +18,25 @@ var App = {};
 		if(player && player.paused){
 			player.play();
 		}
+	};
+
+	App.SetCookie = function(cname, cvalue, exdays) {
+	    var d = new Date();
+	    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+	    var expires = "expires="+d.toUTCString();
+	    document.cookie = cname + "=" + cvalue + "; " + expires;
+	};
+
+	App.GetCookie = function(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i=0; i<ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') c = c.substring(1);
+	        if (c.indexOf(name) == 0) 
+	        	return c.substring(name.length,c.length);
+	    }
+	    return "";
 	};
 
 	$(document).ready(init);
@@ -51,6 +71,11 @@ var App = {};
 				languageControl.removeClass("show");
 			}
 		});
+		$(".lang-option").on("click", function(e){
+			e.preventDefault();
+			changeLanguage($(this).data("code"));
+		});
+
 		menu.find(".menu-toogle").on("click", function(){
 			if(languageControl.hasClass("show")){				
 				languageControl.removeClass("show");
@@ -109,10 +134,12 @@ var App = {};
         //Background slides
         if($(".welcome-page").length > 0){
         	$.backstretch([
-			      "img/background/i01.jpg"
-			    , "img/background/i02.jpg"
-			    , "img/background/i03.jpg"
-			    , "img/background/i04.jpg"
+			      "img/background/welcome.jpg"
+			    , "img/background/home.jpg"
+			    , "img/background/about.jpg"
+			    , "img/background/designforum.jpg"
+			    , "img/background/gallery.jpg"
+			    , "img/background/contact.jpg"
 			], {duration: 9000, fade: 1000});
         }
 
@@ -170,7 +197,7 @@ var App = {};
 		}		   
 
 		if($("body.welcome-page").length > 0 || $("body.gallery").length > 0){
-			toggleMusic(musicTrigger, true);
+			//toggleMusic(musicTrigger, true);
 		}else{
 			musicTrigger.addClass("off");
 		}		
@@ -195,6 +222,16 @@ var App = {};
 			player.pause();
 		}	
 		trigger.toggleClass('off');	
+	}
+
+	function changeLanguage(code){
+		code = code || 'EN';
+		var existing = App.GetCookie(DEFAULT_LANGUAGE_COOKIE_NAME);
+
+		if(existing != code){
+			App.SetCookie(DEFAULT_LANGUAGE_COOKIE_NAME, code, 30);
+			window.location.reload();
+		}
 	}
 
 	function getPlayer(){

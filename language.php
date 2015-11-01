@@ -1,12 +1,8 @@
 <?php
 if (isset($_COOKIE['language'])) {
-    $code = $request->cookie['language'];
+    $code = $_COOKIE['language'];
 } else {
     $code = 'EN';
-}
-
-if (!isset($_COOKIE['language']) || $_COOKIE['language'] != $code) {
-    setcookie('language', $code, time() + 60 * 60 * 24 * 30, '/', $_SERVER['HTTP_HOST']);
 }
 
 session_start();

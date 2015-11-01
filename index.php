@@ -63,37 +63,37 @@
                         </div>
                         <ul class="none-style languages">
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['english']; ?>">
+                                <a href="#" data-code="EN" class="lang-option" title="<?php echo $_SESSION['english']; ?>">
                                     <img class="flag-icon" src="img/flags/en.png" alt="<?php echo $_SESSION['english']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['chinese']; ?>">
+                                <a href="#" data-code="CN" class="lang-option" title="<?php echo $_SESSION['chinese']; ?>">
                                     <img class="flag-icon" src="img/flags/ch.png" alt="<?php echo $_SESSION['chinese']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['bahasa']; ?>">
+                                <a href="#" data-code="BA" class="lang-option" title="<?php echo $_SESSION['bahasa']; ?>">
                                     <img class="flag-icon" src="img/flags/ba.png" alt="<?php echo $_SESSION['bahasa']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['japanese']; ?>">
+                                <a href="#" data-code="JP" class="lang-option" title="<?php echo $_SESSION['japanese']; ?>">
                                     <img class="flag-icon" src="img/flags/jp.png" alt="<?php echo $_SESSION['japanese']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['korean']; ?>">
+                                <a href="#" data-code="KO" class="lang-option" title="<?php echo $_SESSION['korean']; ?>">
                                     <img class="flag-icon" src="img/flags/ko.png" alt="<?php echo $_SESSION['korean']; ?>">
                                 </a>
                             </li>                            
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['myanmar']; ?>">
+                                <a href="#" data-code="MY" class="lang-option" title="<?php echo $_SESSION['myanmar']; ?>">
                                     <img class="flag-icon" src="img/flags/my.png" alt="<?php echo $_SESSION['myanmar']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="<?php echo $_SESSION['vietnamese']; ?>">
+                                <a href="#" data-code="VI" class="lang-option" title="<?php echo $_SESSION['vietnamese']; ?>">
                                     <img class="flag-icon" src="img/flags/vi.png" alt="<?php echo $_SESSION['vietnamese']; ?>">
                                 </a>
                             </li>
@@ -132,31 +132,31 @@
                         <div class="language-list">
                             <ul class="none-style">
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['english']; ?>"><?php echo $_SESSION['english']; ?>
+                                    <a href="#" data-code="EN" class="lang-option" title="<?php echo $_SESSION['english']; ?>"><?php echo $_SESSION['english']; ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['chinese']; ?>"><?php echo $_SESSION['chinese']; ?>
+                                    <a href="#" data-code="CN" class="lang-option" title="<?php echo $_SESSION['chinese']; ?>"><?php echo $_SESSION['chinese']; ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['bahasa']; ?>"><?php echo $_SESSION['bahasa']; ?>
+                                    <a href="#" data-code="BA" class="lang-option" title="<?php echo $_SESSION['bahasa']; ?>"><?php echo $_SESSION['bahasa']; ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['japanese']; ?>"><?php echo $_SESSION['japanese']; ?>
+                                    <a href="#" data-code="JP" class="lang-option" title="<?php echo $_SESSION['japanese']; ?>"><?php echo $_SESSION['japanese']; ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['korean']; ?>"><?php echo $_SESSION['korean']; ?>
+                                    <a href="#" data-code="KO" class="lang-option" title="<?php echo $_SESSION['korean']; ?>"><?php echo $_SESSION['korean']; ?>
                                     </a>
                                 </li>                            
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['myanmar']; ?>"><?php echo $_SESSION['myanmar']; ?>
+                                    <a href="#" data-code="MY" class="lang-option" title="<?php echo $_SESSION['myanmar']; ?>"><?php echo $_SESSION['myanmar']; ?>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" title="<?php echo $_SESSION['vietnamese']; ?>"><?php echo $_SESSION['vietnamese']; ?>
+                                    <a href="#" data-code="VI" class="lang-option" title="<?php echo $_SESSION['vietnamese']; ?>"><?php echo $_SESSION['vietnamese']; ?>
                                     </a>
                                 </li>                                
                             </ul>

@@ -574,15 +574,7 @@ MAIN UI
 }
 .contact-form .inputs {
     margin: 0 auto;
-    width: 90%;
-}
-.contact-form .inputs .fl {    
-    width: 48%;
-    margin-right: 1%;
-}
-.contact-form .inputs .fr {
-    width: 48%;
-    margin-left: 1%;
+    width: 80%;
 }
 .contact-form .form-control {
     margin-bottom: 20px;
@@ -591,14 +583,15 @@ MAIN UI
     
 }
 .contact-form .actions .btn-primary {
-    padding: 10px 150px;
+    padding: 10px 50px;
+    width: 70%;
 }
 .contact-form .form-control {
 
 }
 .contact-form .form-control .control {
     width: 95%;
-    padding: 2.2%;
+    padding: 15px;
 }
 .contact-form .form-control textarea.control {
     height: 88px;
@@ -756,8 +749,7 @@ MAIN UI
     /* ==============
         MOBILE: Main
        ============== */
-    body {
-        background-position: 0 -540px;
+    body {        
     }
     .footer-container {
         display: none;
@@ -768,8 +760,8 @@ MAIN UI
     .controlpanel {
         display: none;
     }
-    .main-top-gap {
-        display: none;
+    .main-top-gap {  
+        display: none;      
     }
     .mobile-controlpanel {
         display: block;
@@ -873,24 +865,48 @@ MAIN UI
         background-color: #333;
     }    
 
+    .office.info-bl .office-info,
+    .office.info-tr .office-info {
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+    }
+    .content-block .title {
+        text-align: center;
+        width: 100%;
+    }
+    .content-block .img-wrapper {
+        width: 100%;
+        float: none;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .content-block .img-wrapper img {
+        max-width: 50%;
+        width: inherit;
+    }
+    .content-block.design-form .content {
+        width: 100%;
+        float: none;
+    }
+    .contact-form .actions .btn-primary {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     .contact-form .inputs {
         width: 100%;
     }   
-    .contact-form .inputs .fl {    
-        width: 100%;
-        margin-right: 0;
-    }
-    .contact-form .inputs .fr {
-        width: 100%;
-        margin-right: 0;
-    }   
+       
     .home .news-list .news-item {
         width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
+    }
+    .contact-form .actions .btn-primary {
+        width: 100%;
     }
 }
 
