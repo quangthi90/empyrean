@@ -38,11 +38,11 @@
                     <span class="menu-toogle"></span>
                     <nav>
                         <ul>
-                            <li><a class="nav-link active" href="home.html">Home</a></li>
-                            <li><a class="nav-link" href="aboutus.html">About Us</a></li>
-                            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-                            <li><a class="nav-link" href="designforum.html">Design Forum</a></li>
-                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li><a class="nav-link" href="home.php"><?php echo $_SESSION['home']; ?></a></li>
+                            <li><a class="nav-link" href="aboutus.php"><?php echo $_SESSION['about_us']; ?></a></li>
+                            <li><a class="nav-link" href="gallery.php"><?php echo $_SESSION['gallery']; ?></a></li>
+                            <li><a class="nav-link" href="designforum.php"><?php echo $_SESSION['design_forum']; ?></a></li>
+                            <li><a class="nav-link" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>
                         </ul>
                     </nav>
                 </div>                
@@ -56,7 +56,7 @@
                         </div>
                         <div class="trigger"></div>
                         <div class="text">
-                            <span class="vertical-text">Languages</span>
+                            <span class="vertical-text"><?php echo $_SESSION['languages']; ?></span>
                         </div>
                     </div>
                     <div class="controlpanel-details">
@@ -64,46 +64,46 @@
                         </div>
                         <ul class="none-style languages">
                             <li>
-                                <a href="#" class="flag" title="English">
-                                    <img class="flag-icon" src="img/flags/en.png" alt="English">
+                                <a href="#" data-code="EN" class="lang-option" title="<?php echo $_SESSION['english']; ?>">
+                                    <img class="flag-icon" src="img/flags/en.png" alt="<?php echo $_SESSION['english']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="Chinese">
-                                    <img class="flag-icon" src="img/flags/ch.png" alt="Chinese (中文)">
+                                <a href="#" data-code="CN" class="lang-option" title="<?php echo $_SESSION['chinese']; ?>">
+                                    <img class="flag-icon" src="img/flags/ch.png" alt="<?php echo $_SESSION['chinese']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="Bahasa">
-                                    <img class="flag-icon" src="img/flags/ba.png" alt="Bahasa (Indonesian)">
+                                <a href="#" data-code="BA" class="lang-option" title="<?php echo $_SESSION['bahasa']; ?>">
+                                    <img class="flag-icon" src="img/flags/ba.png" alt="<?php echo $_SESSION['bahasa']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="Japanese">
-                                    <img class="flag-icon" src="img/flags/jp.png" alt="Japanese (日本語)">
+                                <a href="#" data-code="JP" class="lang-option" title="<?php echo $_SESSION['japanese']; ?>">
+                                    <img class="flag-icon" src="img/flags/jp.png" alt="<?php echo $_SESSION['japanese']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="Korean">
-                                    <img class="flag-icon" src="img/flags/ko.png" alt="Korean (한국어)">
+                                <a href="#" data-code="KO" class="lang-option" title="<?php echo $_SESSION['korean']; ?>">
+                                    <img class="flag-icon" src="img/flags/ko.png" alt="<?php echo $_SESSION['korean']; ?>">
                                 </a>
                             </li>                            
                             <li>
-                                <a href="#" class="flag" title="Myanmar">
-                                    <img class="flag-icon" src="img/flags/my.png" alt="Burmese (Myanmar)">
+                                <a href="#" data-code="MY" class="lang-option" title="<?php echo $_SESSION['myanmar']; ?>">
+                                    <img class="flag-icon" src="img/flags/my.png" alt="<?php echo $_SESSION['myanmar']; ?>">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="flag" title="Vietnam">
-                                    <img class="flag-icon" src="img/flags/vi.png" alt="Vietnamese (Tiếng Việt)">
+                                <a href="#" data-code="VI" class="lang-option" title="<?php echo $_SESSION['vietnamese']; ?>">
+                                    <img class="flag-icon" src="img/flags/vi.png" alt="<?php echo $_SESSION['vietnamese']; ?>">
                                 </a>
                             </li>
                         </ul>
                         <div class="music-control">
-                            <div class="label">Music</div>
+                            <div class="label"><?php echo $_SESSION['music']; ?></div>
                             <div class="music-trigger disable-selection">
-                                <span class="text lblon">ON</span>
-                                <span class="text lbloff">OFF</span>
+                                <span class="text lblon"><?php echo $_SESSION['on']; ?></span>
+                                <span class="text lbloff"><?php echo $_SESSION['off']; ?></span>
                             </div>                            
                         </div>
                     </div>              
@@ -129,23 +129,23 @@
                     </div>
                 </div>
                 <div class="news-list wrapper">
-                    <h2 class="header">About Us</h2>
+                    <h2 class="header"><?php echo $_SESSION['about_us']; ?></h2>
                     <div class="item-list">
                         <div class="news-item">
                             <div class="overlay">     
                             </div>
-                            <h4 class="news-title">Our Mission</h4>
+                            <h4 class="news-title"><?php echo $_SESSION['our_mission']; ?></h4>
                             <div class="news-content">
-                                It is our belief that nothing exists by itself in this world. We co-exist with one another and we are interdependent on one another. This creates greater dimension and contributes colours to the earth. Good designs are not good enough; a great product is one that will be able to sell itself. We believe that the design that sells is the design that is most relevant and appealing to the consumer...
+                                <?php echo $_SESSION['mission_content']; ?>
                             </div>
                             <a href="aboutus.html#mission" class="seemore"></a>
                         </div>
                         <div class="news-item">
                             <div class="overlay">     
                             </div>
-                            <h4 class="news-title">Our Story</h4>
+                            <h4 class="news-title"><?php echo $_SESSION['our_story']; ?></h4>
                             <div class="news-content">
-                                Empyrean Design was founded in 1992 by Eric Haywood Chang. Having graduated from LaSalle College of the Arts in Singapore; majoring in Interior Designing and minor in Product Designing and Fine Arts, he is a self-taught architect that possesses many years of experience and expertise in the related field. He is passionate about design, arts, and music...
+                                <?php echo $_SESSION['story_content']; ?>
                             </div>
                             <a href="aboutus.html#story" class="seemore"></a>
                         </div>
@@ -156,7 +156,7 @@
         <div class="footer-container">            
             <footer>
                 <div class="overlay"></div> 
-                <p class="center">Copyright &copy; 2015 Empyrean Design. All rights reserved.</p>
+                <p class="center"><?php echo $_SESSION['copyright']; ?></p>
             </footer>
         </div>
         <div class="overlay overlay-main hidden"></div>
