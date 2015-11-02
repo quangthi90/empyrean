@@ -37,11 +37,11 @@
                     <span class="menu-toogle"></span>
                     <nav>
                         <ul>
-                            <li><a class="nav-link" href="home.html"><?php echo $_SESSION['home']; ?></a></li>
-                            <li><a class="nav-link" href="aboutus.html"><?php echo $_SESSION['about_us']; ?></a></li>
-                            <li><a class="nav-link" href="gallery.html"><?php echo $_SESSION['gallery']; ?></a></li>
-                            <li><a class="nav-link" href="designforum.html"><?php echo $_SESSION['design_forum']; ?></a></li>
-                            <li><a class="nav-link" href="contact.html"><?php echo $_SESSION['contact']; ?></a></li>
+                            <li><a class="nav-link" href="home.php"><?php echo $_SESSION['home']; ?></a></li>
+                            <li><a class="nav-link" href="aboutus.php"><?php echo $_SESSION['about_us']; ?></a></li>
+                            <li><a class="nav-link" href="gallery.php"><?php echo $_SESSION['gallery']; ?></a></li>
+                            <li><a class="nav-link" href="designforum.php"><?php echo $_SESSION['design_forum']; ?></a></li>
+                            <li><a class="nav-link" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>
                         </ul>
                     </nav>
                 </div>                
