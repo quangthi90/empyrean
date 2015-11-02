@@ -197,7 +197,7 @@ var App = {};
 		}		   
 
 		if($("body.welcome-page").length > 0 || $("body.gallery").length > 0){
-			//toggleMusic(musicTrigger, true);
+			toggleMusic(musicTrigger, true);
 		}else{
 			musicTrigger.addClass("off");
 		}		

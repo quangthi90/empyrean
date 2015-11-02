@@ -5,8 +5,6 @@ if (isset($_COOKIE['language'])) {
     $code = 'EN';
 }
 
-session_start();
-
 switch ($code) {
     case 'VI':
         $_SESSION['welcome'] = 'Chào mừng';

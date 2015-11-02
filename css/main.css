@@ -340,6 +340,10 @@ MAIN UI
     margin-left: -20px;
     color: #FFF;
     white-space: nowrap;
+    width: 80px;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .controlpanel.show .controller .trigger{
     background: #B3665D  url('../img/nav_h.png') no-repeat;   
@@ -585,7 +589,7 @@ MAIN UI
 }
 .contact-form .actions .btn-primary {
     padding: 10px 50px;
-    width: 70%;
+    width: 50%;
 }
 .contact-form .form-control {
 
