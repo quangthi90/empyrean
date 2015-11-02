@@ -339,6 +339,7 @@ MAIN UI
     margin-top: 35px;
     margin-left: -20px;
     color: #FFF;
+    white-space: nowrap;
 }
 .controlpanel.show .controller .trigger{
     background: #B3665D  url('../img/nav_h.png') no-repeat;   
