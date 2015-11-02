@@ -1,6 +1,6 @@
 <?php include 'language.php'; ?>
 
-<?php $page = 'about'; ?>
+<?php $page = 'aboutus'; ?>
 <?php $page_title = $_SESSION['about_us']; ?>
 <?php include 'header.php'; ?>
 

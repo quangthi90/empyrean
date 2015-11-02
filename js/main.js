@@ -132,7 +132,7 @@ var App = {};
 		}        
 
         //Background slides
-        if($(".welcome-page").length > 0){
+        if($(".welcome").length > 0){
         	$.backstretch([
 			      "img/background/welcome.jpg"
 			    , "img/background/home.jpg"
@@ -196,7 +196,7 @@ var App = {};
 	        }); 
 		}		   
 
-		if($("body.welcome-page").length > 0 || $("body.gallery").length > 0){
+		if($("body.welcome").length > 0 || $("body.gallery").length > 0){
 			toggleMusic(musicTrigger, true);
 		}else{
 			musicTrigger.addClass("off");

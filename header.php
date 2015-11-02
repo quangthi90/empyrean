@@ -33,7 +33,7 @@
         </div>
         <header class="wrapper clearfix">
             <h1 class="title">
-                <a href="#" class="logo">
+                <a href="index.php" class="logo">
                     <img src="img/logo.png" alt="Logo" />
                 </a>
             </h1>
@@ -41,11 +41,11 @@
                 <span class="menu-toogle"></span>
                 <nav>
                     <ul>
-                        <li><a class="nav-link" href="home.php"><?php echo $_SESSION['home']; ?></a></li>
-                        <li><a class="nav-link" href="aboutus.php"><?php echo $_SESSION['about_us']; ?></a></li>
-                        <li><a class="nav-link" href="gallery.php"><?php echo $_SESSION['gallery']; ?></a></li>
-                        <li><a class="nav-link" href="designforum.php"><?php echo $_SESSION['design_forum']; ?></a></li>
-                        <li><a class="nav-link" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'home' ? 'active' : ''; ?>" href="home.php"><?php echo $_SESSION['home']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'aboutus' ? 'active' : ''; ?>" href="aboutus.php"><?php echo $_SESSION['about_us']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'gallery' ? 'active' : ''; ?>" href="gallery.php"><?php echo $_SESSION['gallery']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'designforum' ? 'active' : ''; ?>" href="designforum.php"><?php echo $_SESSION['design_forum']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'contact' ? 'active' : ''; ?>" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>
                     </ul>
                 </nav>
             </div>                
