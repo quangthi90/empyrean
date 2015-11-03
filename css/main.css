@@ -598,6 +598,7 @@ MAIN UI
 }
 .contact-form .form-control {
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .contact-form .actions {
     
@@ -606,11 +607,9 @@ MAIN UI
     padding: 10px 50px;
     width: 50%;
 }
-.contact-form .form-control {
 
-}
 .contact-form .form-control .control {
-    width: 95%;
+    width: 100%;
     padding: 15px;
 }
 .contact-form .form-control textarea.control {
@@ -701,6 +700,35 @@ MAIN UI
 }
 .gallery figcaption{
     display: none;
+}
+
+.gallery .item-list.owl-carousel .item {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+.gallery .item-list.owl-carousel .thumbs {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.gallery .item-list.owl-carousel .thumbs img {
+    display: block;    
+    height: auto;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    border: 0px solid #FFF;
+}
+.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-prev {
+    top: 25%;
+    left: -5px !important;
+}
+.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-next {
+    top: 25%;
+    right: -5px !important;
 }
 
 /* ===============
@@ -940,6 +968,11 @@ MAIN UI
 
     .page-title {
         text-align: center;
+    }
+
+    .office-list .office .office-img {
+        height: 226px;
+        width: 100%;
     }
 
     .gallery .item-list .item {
