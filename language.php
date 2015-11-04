@@ -44,6 +44,8 @@ switch ($code) {
 
         $_SESSION['forumdesign_objective_label'] = "Diễn đàn thiết kế cho học sinh quốc tế";
         $_SESSION['forumdesign_objective_content'] = "<p> Mục tiêu của diễn đàn thiết kế là để giúp xây dựng sự tự tin của học sinh trong thiết kế. <br> Chúng tôi sẽ giúp họ nhìn thấy những thế giới vật lý trong một lĩnh vực mới để có thiết kế ý thức hơn trong việc giải quyết vấn đề. <br> Họ sẽ tìm hiểu thông qua các quan điểm vĩ mô và vi mô của các thành phần, do đó mở rộng quan điểm của họ về nhận thức trong họ khái niệm thiết kế. </p> <p class = 'center'> <strong> - Khi người ta không thể nhìn thấy xa hơn kích thước của cuộc sống, không có gì có lợi nhuận có thể được tạo ra. - <br> Trích dẫn Haywood Change của Eric</strong> </p> <p> Khi đăng ký với chúng tôi, học sinh từ bất kỳ giảng viên thiết kế có thể gửi tác phẩm của mình cho các nhà phê bình thiết kế hoặc để thảo luận <br> Trong trở lại, chúng tôi sẽ đăng lên. các công trình (sau khi có sự chấp thuận của cá nhân học sinh) để chia sẻ để nhiều có thể học và hưởng lợi từ nó. </p>";
+        $_SESSION['forumdesign_contact_label'] = "Thông tin liên lạc";
+        $_SESSION['forumdesign_contact_info'] = "Chúng tôi muốn có thông tin về bạn. Xin hãy điền thông tin của bạn vào form bên dưới. Những thông tin này sẽ được lưu giữ đảm bảo.";
         
         break;
 
