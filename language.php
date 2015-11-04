@@ -29,7 +29,7 @@ switch ($code) {
         $_SESSION['our_mission'] = 'Nhiệm vụ';
         $_SESSION['mission_content'] = 'Niềm tin của chúng tôi là không thứ gì có thể tồn tại độc lập trên thế giới này. Chúng ta tồn tại cùng nhau và hỗ trợ nhau phát triển, điều này giúp thế giới trở nên muôn màu muôn vẻ, rực rỡ hơn. Một sản phẩm tuyệt vời không chỉ được thiết kế đẹp, nó còn phải .... ';
         $_SESSION['our_story'] = 'Lịch sử';
-        $_SESSION['story_content'] = 'Empyrean Design được thành lập vào năm 1992 bởi Eric Haywood Chang. Sau khi tốt nghiệp trường đại học mỹ thuật LaSalle tại Singapo, ngành thiết kế nội thất và chuyên ngành thiết kế sản phẩm và mỹ thuật. Ông là một kiến trúc sư có nhiều năm kinh nghiệm trong lĩnh vực thiết kế. Ông đam mê thiết kế, nghệ thuật và âm nhạc...';
+        $_SESSION['story_content'] = 'Empyrean Design được thành lập vào năm 1992 bởi Eric Haywood Chang. Sau khi tốt nghiệp trường đại học mỹ thuật LaSalle tại Singapo, ngành thiết kế nội thất và chuyên ngành thiết kế sản phẩm và mỹ thuật. Ông là một kiến trúc sư có nhiều năm kinh nghiệm trong...';
         $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. Đã đăng ký sở hữu trí tuệ.';
         break;
 
@@ -55,7 +55,7 @@ switch ($code) {
         $_SESSION['mission_content'] = 'Kami mempercayai bahwa tidak ada sesuatu yang terbentuk dengan sendirinya didunia ini. Kita berkerja berdampingan dan saling bergantung satu dan lainnya. Hal ini menciptakan dimensi yang lebih besar dan memberikan corak pada dunia. Disain yang bagus tidak cukup, produk yang luar biasa akan memiliki nilai jual tersendiri. Kami mempercayai bahwa disamping memiliki aspek estetis...';
         $_SESSION['our_story'] = 'Latar Belakang';
         $_SESSION['story_content'] = 'EMPYREAN DESIGN  didirikan oleh Eric Haywood Chang pada tahun 1992. Menyelesaikan pendidikan  di LaSalle College of the Arts di Singapore dalam bidang Interior Designing and minor in Product Designing and Fine Arts. Eric Haywood Chang adalah arsitek yang sangat handal dan memiliki pengalaman beberapa tahun dan ahli dalam bidangnya. Dia menguasai  bidang disain, seni dan musik...';
-        $_SESSION['copyright'] = '';
+        $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. All rights reserved.';
         break;
 
     case 'JP':
@@ -80,7 +80,7 @@ switch ($code) {
         $_SESSION['mission_content'] = '私たちは、何もこの世界では、それ自体によって形成されていないと信じています。私たちは並んで動作し、互いに相互に依存しています。これは、より大きな寸法を作成し、世界にスタイルを与えます。グッドデザインは、優れた製品は、独自のセールスポイントを持っていますが、十分ではありません。。。';
         $_SESSION['our_story'] = '私たちの物語';
         $_SESSION['story_content'] = '荘厳なデザインは、製品のデザインと美術におけるインテリアデザインの分野とマイナーにシンガポールで芸術のラサール大学で卒業、1992年にエリック・ヘイウッドチャンによって設立されました。エリック・ヘイウッドの建築家チャンは、非常に信頼性が高いと、数年の経験を持ち、それぞれの分野の専門家です。。。';
-        $_SESSION['copyright'] = '';
+        $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. All rights reserved.';
         break;
 
     case 'KO':
@@ -105,7 +105,7 @@ switch ($code) {
         $_SESSION['mission_content'] = '그것은 아무것도이 세상에서 그 자체로 존재하지 않음을 우리의 믿음이다. 우리는 공존 서로 우리는 서로에 상호 의존적이다. 이것은 더 큰 치수를 작성하고 땅에 색상을 기여한다. 좋은 디자인은 충분하지 않습니다; 좋은 제품 자체를 판매 할 수있을 것입니다. 우리가 판매하는 디자인은 미적 측면 외에...';
         $_SESSION['our_story'] = '우리의 이야기';
         $_SESSION['story_content'] = 'Empyrean Design 은 Eric Haywood Chang 에 의해 1992 년에 설립되었다.싱가포르 예술의 LaSalle 대학을 졸업 한; 인테리어 디자인 전공 및 제품 디자인 및 미술에 작은, 그는 관련 분야에서 경험과 전문 지식의 많은 년을 가지고 독학으로 건축가입니다. 그는 디자인, 예술, 음악에 대한 열정이다...';
-        $_SESSION['copyright'] = '';
+        $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. All rights reserved.';
         break;
 
     case 'MY':
@@ -130,7 +130,7 @@ switch ($code) {
         $_SESSION['mission_content'] = 'ေလာကတြင္ မည္သည့္အရာမွ သီးျခားရပ္တည္ နိုင္စြမ္းမရွိ ဟူေသာစကားကို ကြၽန္ုပ္တို႔ ယံုၾကည္ပါသည္။ ကြၽနု္ပ္တို႔သည္ အတူတကြ ပူးေပါင္း ေနထုိင္ျပီး တစ္ဦးႏွင့္ တစ္ဦး အျပန္အလွန္ အမွီသဟဲ ျပဳေနၾကရပါသည္။ ယင္းသို႔ အတူတကြ ပူးေပါင္းေနထုိင္ျခင္းသည္ ကမာၻေျမၾကီးကို ပိုမိုသာယာလွပျပီး အဓိပၸာယ္ ရွိေစသည္။ ပစၥည္းေကာင္းတို႔မည္သည္မွာ တျခားမည့္သည့္ အတြဲအစပ္မွ မပါပဲ သူ႔အတုိင္းကိုပင္ ေရာင္းခ်နိုင္စြမ္း ရွိၾကသည္။ ေရာင္းခ်၍ရေသာ ဒီဇိုင္းမ်ားသည္ သံုးစြဲသူမ်ား အထူးနွစ္သက္ သေဘာက် နွစ္ခ်ိဳက္ျပီး ၀ယ္သူ၏ လိုအပ္ခ်က္မ်ားနွင့္ ကိုက္ညီ၍ သာ ေရာင္းခ်နုိင္ျခင္းျဖစ္သည္ ဟုလည္း...';
         $_SESSION['our_story'] = 'ကုမၸဏီအေၾကာင္း';
         $_SESSION['story_content'] = 'ကြၽနု္ပ္တို႔၏ Empyrean Design ကုမၸဏီကို ၁၉၉၂ ခုနွစ္တြင္ Mr. Eric Haywood Chang မွ စတင္တည္ေထာင္ခဲ့ ပါသည္။ Mr. Eric သည္ Singapore နိုင္ငံ LaSalle College of the Arts မွ ဘြဲ႔ရရွိခဲ့ျပီး သူ၏ အဓိကဘာသာရပ္မ်ားမွာ အိမ္တြင္းအလွ ဆင္လုပ္ငန္းျဖစ္ျပီး အရန္ဘာသာရပ္မ်ားအျဖစ္ ကုန္ပစၥည္း ဒီဇိုင္းထြင္ျခင္းနွင့္ အျခားလက္မႈ အနုပညာမ်ား ပါ၀င္ပါသည္။ သူသည္ အေဆာက္အဦနွင့္ ပတ္သတ္ေသာ ဗိသုကာပညာကို ကိုယ္တိုင္ အပတ္တကုတ္ၾကိုစား သင္ယူခဲ့ရျပီး ၄င္းပညာျဖင့္ပင္ နွစ္ေပါင္းမ်ားစြာ လုပ္ကိုင္ခဲ့ျခင္းမွ အေတြ႔အၾကံု ဗဟုသုတမ်ားစြာ ရရွိျပီး ကြၽမ္းက်င္သူ တစ္ေယာက္ျဖစ္လာ ခဲ့ပါသည္။ သူသည္ ဂီတ၊ အႏုပညာ နွင့္ ဒီဇိုင္းဖန္တီးျခင္း...';
-        $_SESSION['copyright'] = '';
+        $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. All rights reserved.';
         break;
 
     case 'CN':
@@ -155,7 +155,7 @@ switch ($code) {
         $_SESSION['mission_content'] = '我们相信，在这个世界上没有什么存在本身。我们共存彼此和我们是相互依赖上彼此。这造成一个更美好，并有助于颜色的世界。良好的设计是不够;一个伟大的产品是一个就能卖自己。我们认为，销售的设计是最相关，并呼吁消费者。。。';
         $_SESSION['our_story'] = '我们的故事';
         $_SESSION['story_content'] = '恩碧亚设计公司(Empyrean Design)成立于1992年由郑杰明先生。从艺术中新加坡拉萨尔学院已经毕业;主修室内设计和较小的产品设计和美术，他也是一位自学成才的建筑设计师是拥有多年相关领域的经验和专业知识。他热衷于设计，艺术和音乐。。。';
-        $_SESSION['copyright'] = '';
+        $_SESSION['copyright'] = 'Copyright &copy; 2015 Empyrean Design. All rights reserved.';
         break;
     
     default:
