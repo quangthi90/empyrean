@@ -115,6 +115,10 @@
 <div class="overlay overlay-main hidden"></div>
 <div class="music-background hidden">
     <audio id="music-background" loop preload="true">
+        <?php if($page == 'gallery') { ?>
+        <source src="assets/fridrik_karlsson.mp3" type='audio/mp3'>
+        <?php } else { ?>
         <source src="assets/thetruth.mp3" type='audio/mp3'>
+        <?php } ?>
    </audio>
 </div>
