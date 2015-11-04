@@ -34,12 +34,14 @@ switch ($code) {
         $_SESSION['about_our_mission'] = '<p> Niềm tin của chúng tôi là không thứ gì có thể tồn tại độc lập trên thế giới này. Chúng ta tồn tại cùng nhau và hỗ trợ nhau phát triển, điều này giúp thế giới trở nên muôn màu muôn vẻ, rực rỡ hơn. Một sản phẩm tuyệt vời không chỉ được thiết kế đẹp, nó còn phải có thể bán được. Chúng tôi tin rằng việc thiết kế có thể đem bán là thiết kế có đa năng nhất và hấp dẫn cho người tiêu dùng, ngoài khía cạnh thẩm mỹ. Chúng tôi đang ở phía trước của các xu hướng thiết kế, và trong thực tế, chúng ta dám tạo ra sự khác biệt trong quá trình tư duy. Chúng tôi rất quan trọng trong khái niệm thiết kế, chưa có khả năng cung cấp các giải pháp về lâu dài. Chúng tôi có biết làm thế nào trong việc tích hợp các thành phần và các vấn đề mà sẽ cung cấp các giải pháp toàn diện, thiết thực và kinh tế trong điều kiện hoạt động của nguồn nhân lực, chi phí vận hành và lợi nhuận. Một trong những mối quan tâm chính của chúng tôi là cung cấp một thiết kế xuất sắc mà còn trong việc bảo tồn các nguồn tài nguyên khách hàng. </ p> <p class = "center"> <strong> - Chúng ta dám đối mặt với những vấn đề tiêu cực, vì chúng ta sẽ có những giải pháp tích cực để khắc phục chúng. - <br> Trích dẫn Haywood Change của Eric </strong> </ p> <p> Công ty chúng tôi tin tưởng trong việc đóng góp cho xã hội và cho thế giới. Chúng tôi đang tích cực giúp đỡ các sinh viên trên toàn thế giới trong việc chia sẻ các thiết kế và các lời phê bình. Ngoài ra, chúng tôi đã thiết lập một diễn đàn thiết kế để tạo thuận lợi cho chức năng này. Chúng tôi muốn giúp các nhà lãnh đạo trẻ tương lai của chúng tôi thiết kế để ước mơ, khám phá, và ở lại đam mê trong những gì họ tin tưởng và yêu thương làm. <br> Trong việc hỗ trợ các ngành công nghiệp âm nhạc, chúng tôi cung cấp cho khách hàng lĩnh vực cạnh tranh chi phí cho các nghệ sĩ và có liên quan đặc biệt trong môi trường âm thanh xây dựng lên. <br> Chúng tôi cũng tham gia vào các chương trình cho thế giới thứ ba. </ p> <p class = "center"> Điều này gắn chặt với tầm nhìn của chúng tôi: <strong> Định hình tương lai chúng ta hôm nay </strong> </ p> <p> Chúng tôi đang định hình tương lai của chúng tôi bằng cách đầu tư và ảnh hưởng đến những người khác trong doanh nghiệp.<br> Dám ước mơ, biến những giấc mơ biến thành hiện thực. <br> Từ bản vẽ cho các tòa nhà, xây dựng một tương lai tốt đẹp. <br> Chúng tôi luôn tự tin bởi vì những khách hàng của chúng tôi tin tưởng vào giấc mơ chúng tôi. </ p>';
         $_SESSION['about_our_story'] = '<p> Empyrean Design được thành lập vào năm 1992 bởi Eric Haywood Chang. Sau khi tốt nghiệp trường đại học mỹ thuật LaSalle tại Singapo, ngành thiết kế nội thất và chuyên ngành thiết kế sản phẩm và mỹ thuật. Ông là một kiến trúc sư có nhiều năm kinh nghiệm trong lĩnh vực thiết kế. Ông đam mê thiết kế, nghệ thuật và âm nhạc. </p> <p> Từ ngày đầu tiên, tập trung chính của chúng tôi đã được trong thiết kế nội thất. Chúng tôi đã hoàn thành nhiều dự án, từ dân cư cho các khách hàng của công ty. Sức mạnh cốt lõi của chúng tôi luôn luôn là trong lĩnh vực xác định hình ảnh của khách hàng và nhu cầu của họ trong suốt quá trình thiết kế của chúng tôi. Chúng tôi có khả năng phát triển hình ảnh của công ty mới và hiện tại cho phần khởi động của công ty mới cũng như cho các công ty đang tìm kiếm vào việc thay đổi hình ảnh công ty của họ. Khách hàng của chúng tôi từ bán lẻ, các công ty doanh nghiệp, khách sạn, cho các cơ quan chính phủ. Chúng tôi đi qua toàn bộ quá trình thiết kế với khách hàng của chúng tôi từ mặt đất bằng không để hoàn thành của từng dự án. Chúng tôi làm việc chặt chẽ với đội ngũ chuyên dụng của chúng ta về kiến trúc, thiết kế, kỹ sư chuyên nghiệp, và các nhà thầu dưới cánh của chúng tôi. Chúng tôi có thể tùy chỉnh phạm vi của chúng tôi làm việc theo yêu cầu của khách hàng từ giai đoạn thiết kế, quản lý dự án, giai đoạn xây dựng và bàn giao dự án cho khách hàng. </ p> <p> Kể từ năm 2004, do các kết nối mạnh mẽ của chúng tôi ở Trung Quốc, chúng tôi đã phân nhánh vào kiến trúc từ thiết kế nội thất. Chúng tôi đã có sự hợp tác hiệu quả với nhiều đối tác Trung Quốc của chúng tôi tại các tỉnh của Trung Quốc và các thành phố khác nhau. Tuy nhiên, tâm điểm chính của chúng tôi đã được ở tỉnh Hải Nam do nó có những con số cao nhất của khách sạn và khu nghỉ dưỡng; các "Hawaii của Trung Quốc" như nhiều người đã đặt tên. Gần đây, chúng tôi đã khảo sát các trang web với mục tiêu giả lập cho kiểm tra kỹ lưỡng hơn và giới thiệu các trang web là tối ưu cho khách hàng sử dụng của chúng tôi. </ p> <p> Trong năm 2008, chúng tôi mạo hiểm vào chuyên môn của môi trường âm thanh cho dù đó là để hỗ trợ các nghệ sĩ hay kỹ sư âm thanh trong khu vực. Sau đó, chúng tôi liên quan đến mình trong việc thiết kế và xây dựng các môi trường khác nhau, từ không gian trung tâm casino, phạm vi bắn trong nhà, giảng đường, thu âm studio, phòng phát thanh truyền hình, nhà hát, vv </ p> <p> Trong năm 2014, chúng tôi bước vào thị trường Myanmar. Chúng tôi đang từ từ đà trong việc thiết kế & xây dựng các ngành công nghiệp. </ p>';
 
-        $_SESSION['lblFullName']  = 'Tên đầy đủ';
+        $_SESSION['lblFullName']  = 'TÊN ĐẦY ĐỦ';
         $_SESSION['lblEmail']  = 'EMAIL';
-        $_SESSION['lblSchool']  = 'Tên trường';
-        $_SESSION['lblFaculty']  = 'Khoa';
-        $_SESSION['lblYearStarted']  = 'Năm bắt đầu';
-        $_SESSION['lblAspiration']  = "Khát vọng hiện tại hoặc tương lai của bạn ?";
+        $_SESSION['lblSchool']  = 'TÊN TRƯỜNG';
+        $_SESSION['lblContact']  = 'THÔNG TIN LIÊN HỆ';
+        $_SESSION['lblContent']  = 'NỘI DUNG';
+        $_SESSION['lblFaculty']  = 'KHOA';
+        $_SESSION['lblYearStarted']  = 'NĂM BẮT ĐẦU';
+        $_SESSION['lblAspiration']  = "KHÁT VỌNG HIỆN TẠI HOẶC TƯƠNG LAI CỦA BẠN ?";
         $_SESSION['lblSend']  = 'Gửi';
 
         $_SESSION['forumdesign_objective_label'] = "Diễn đàn thiết kế cho học sinh quốc tế";
@@ -109,6 +111,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -185,6 +189,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -261,6 +267,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -337,6 +345,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -409,6 +419,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -484,6 +496,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
+        $_SESSION['lblContact']  = 'Contact';
+        $_SESSION['lblContent']  = 'Content';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
