@@ -34,7 +34,7 @@
                     <div class="news-content">
                         <?php echo $_SESSION['mission_content']; ?>
                     </div>
-                    <a href="aboutus.html#mission" class="seemore"></a>
+                    <a href="aboutus.php#mission" class="seemore"></a>
                 </div>
                 <div class="news-item">
                     <div class="overlay">     
@@ -43,7 +43,7 @@
                     <div class="news-content">
                         <?php echo $_SESSION['story_content']; ?>
                     </div>
-                    <a href="aboutus.html#story" class="seemore"></a>
+                    <a href="aboutus.php#story" class="seemore"></a>
                 </div>
             </div>
         </div>

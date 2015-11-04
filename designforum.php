@@ -10,25 +10,13 @@
         <div class="content-block">
            <div class="overlay"></div>                   
            <div class="content-block-details">
-               <h3 class="title right">International Students' Design Forum</h3>
+               <h3 class="title right"><?php echo $_SESSION['forumdesign_objective_label']; ?></h3>
                <div class="clear"></div>
                <div class="img-wrapper">
                    <img src="img/objective.png" alt="Our Mission">
                </div>                       
                <div class="content">
-                   <p>
-                    The objectives of this design forum is to help build students' confidence in design. <br>
-                    We will help them in seeing the physical world in a new realm in order to be more design conscious in problem solving.<br>
-                    They will learn through the macro and micro views of components, hence enlarging their perspective in perception in their design concept.
-                   </p>
-                   <p class="center">
-                    <strong> -  When one cannot see beyond the dimensions of life, nothing profitable can be created. - <br> Eric's Haywood Chang's quote 
-                    </strong>
-                   </p>
-                   <p>
-                      Upon registering with us, students from any design faculty may submit their work for design critics or for discussion.<br>
-                      In returned, we will post up these works (after having approval from individual student) for sharing so that more can learn and benefit from it.                              
-                   </p>
+                   <?php echo $_SESSION['forumdesign_objective_content']; ?>
                </div>
            </div>
        </div>
