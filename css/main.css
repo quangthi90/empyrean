@@ -664,7 +664,7 @@ MAIN UI
     padding: 10px;    
 }
 .gallery .album-category .item-list .item-info {
-    display: none;
+    display: block;
 }
 .gallery .item-list .item-info .overlay {    
 }
