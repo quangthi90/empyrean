@@ -11,12 +11,12 @@
       <div class="content-block">
          <div class="overlay"></div>                   
          <div class="content-block-details">
-             <h3 class="title right"><?php echo $_SESSION['our_mission']; ?></h3>                       
+             <h3 class="title right"><?php echo $_SESSION['our_mission']; ?></h3>
              <div class="clear"></div>
              <div class="img-wrapper">
                  <img src="img/about/vision.png" alt="Our Mission">
              </div>                       
-             <div class="content">
+             <div class="content">                
                  <?php echo $_SESSION['about_our_mission']; ?>
              </div>
          </div>
@@ -25,12 +25,13 @@
      <div class="content-block">
          <div class="overlay"></div>                   
          <div class="content-block-details">
+                    
              <h3 class="title right"><?php echo $_SESSION['our_story']; ?></h3>                       
              <div class="clear"></div>
              <div class="img-wrapper">
                  <img src="img/about/company.png" alt="Our story">
              </div>                       
-             <div class="content">
+             <div class="content">                
                  <?php echo $_SESSION['about_our_story']; ?>
              </div>
          </div>
