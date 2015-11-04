@@ -287,6 +287,21 @@ MAIN UI
 .header-overlay {
     display: block;
 }
+
+.aboutus .overlay.header-overlay {
+    background-color: #023261;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
+      /* IE 5-7 */
+    filter: alpha(opacity=35);
+    /* Netscape */
+    -moz-opacity: 0.35;
+    /* Safari 1.x */
+    -khtml-opacity: 0.35;
+    /* Good browsers */
+    opacity: 0.35;
+}
+
 .mobile-controlpanel {
     display: none;
 }
@@ -340,6 +355,10 @@ MAIN UI
     margin-left: -20px;
     color: #FFF;
     white-space: nowrap;
+    width: 80px;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .controlpanel.show .controller .trigger{
     background: #B3665D  url('../img/nav_h.png') no-repeat;   
@@ -579,19 +598,18 @@ MAIN UI
 }
 .contact-form .form-control {
     margin-bottom: 20px;
+    overflow: hidden;
 }
 .contact-form .actions {
     
 }
 .contact-form .actions .btn-primary {
     padding: 10px 50px;
-    width: 70%;
+    width: 50%;
 }
-.contact-form .form-control {
 
-}
 .contact-form .form-control .control {
-    width: 95%;
+    width: 100%;
     padding: 15px;
 }
 .contact-form .form-control textarea.control {
@@ -604,15 +622,15 @@ MAIN UI
 .gallery .item-list {    
 }
 .gallery .item-list .item {
-    float: left;    
-    width: 280px;
-    margin: 10px;
+    float: left;
+    width: 23%;
+    margin: 1%;
 }
 .gallery .item-list .thumbs {
     position: relative;
     margin: 0 auto;
-    width: 250px;
-    height: 200px;
+    height: 160px;
+    max-width: 90%;
     margin-bottom: 10px;
 }
 .gallery .item-list .thumbs > a {
@@ -644,6 +662,9 @@ MAIN UI
     position: relative;
     color: #FFF;
     padding: 10px;    
+}
+.gallery .album-category .item-list .item-info {
+    display: none;
 }
 .gallery .item-list .item-info .overlay {    
 }
@@ -681,6 +702,35 @@ MAIN UI
     display: none;
 }
 
+.gallery .item-list.owl-carousel .item {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+.gallery .item-list.owl-carousel .thumbs {
+    position: relative;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+.gallery .item-list.owl-carousel .thumbs img {
+    display: block;    
+    height: auto;
+    box-shadow: none;
+    outline: none;
+    position: relative;
+    border: 0px solid #FFF;
+}
+.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-prev {
+    top: 25%;
+    left: -5px !important;
+}
+.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-next {
+    top: 25%;
+    right: -5px !important;
+}
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -691,6 +741,26 @@ MAIN UI
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+@media only screen and (max-width: 768px) {
+    .contact-form .inputs {
+        width: 100%;
+    }   
+       
+    .home .news-list .news-item {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .contact-form .actions .btn-primary {
+        width: 100%;
+    }
+
+    .gallery .item-list .item {
+        width: 31%;
+        margin: 1%;
+    }
+}
 
 @media only screen and (max-width: 480px) {
     /* ==============
@@ -750,7 +820,8 @@ MAIN UI
     /* ==============
         MOBILE: Main
        ============== */
-    body {        
+    body.gallery {        
+        background-position: -300px -15px;
     }
     .footer-container {
         display: none;
@@ -884,7 +955,7 @@ MAIN UI
         text-align: center;
     }
     .content-block .img-wrapper img {
-        max-width: 50%;
+        max-width: 70%;
         width: inherit;
     }
     .content-block.design-form .content {
@@ -894,20 +965,19 @@ MAIN UI
     .contact-form .actions .btn-primary {
         width: 100%;
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .contact-form .inputs {
-        width: 100%;
-    }   
-       
-    .home .news-list .news-item {
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 20px;
+    .page-title {
+        text-align: center;
     }
-    .contact-form .actions .btn-primary {
+
+    .office-list .office .office-img {
+        height: 226px;
         width: 100%;
+    }
+
+    .gallery .item-list .item {
+        width: 48%;
+        margin: 1%;
     }
 }
 
@@ -936,6 +1006,9 @@ MAIN UI
 
     .wrapper {        
         margin: 0 auto;
+    }
+    .gallery .item-list .thumbs {
+        height: 200px;
     }
 }
 
