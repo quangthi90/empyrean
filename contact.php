@@ -69,20 +69,20 @@
       <div class="contact-form">
         <div class="inputs">
           <div class="form-control">
-              <input class="control" type="text" placeholder="FULL NAME" />
+              <input class="control" type="text" placeholder="<?php echo $_SESSION['lblFullName']; ?>" />
           </div>
           <div class="form-control">
-              <input class="control" type="email" placeholder="EMAIL" />
+              <input class="control" type="email" placeholder="<?php echo $_SESSION['lblEmail']; ?>" />
           </div>
           <div class="form-control">
-              <input class="control" type="text" placeholder="CONTACT" />
+              <input class="control" type="text" placeholder="<?php echo $_SESSION['lblContact']; ?>" />
           </div>
           <div class="form-control">
-              <textarea class="control" placeholder="CONTENT"></textarea>
+              <textarea class="control" placeholder="<?php echo $_SESSION['lblContent']; ?>"></textarea>
           </div>                    
         </div>
         <div class="actions center">
-          <button class="btn btn-primary">Send</button>
+          <button class="btn btn-primary"><?php echo $_SESSION['lblSend']; ?></button>
         </div>
       </div>
   </div> <!-- #main -->
