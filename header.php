@@ -45,7 +45,8 @@
                         <li><a class="nav-link <?php echo $page == 'aboutus' ? 'active' : ''; ?>" href="aboutus.php"><?php echo $_SESSION['about_us']; ?></a></li>
                         <li><a class="nav-link <?php echo $page == 'gallery' ? 'active' : ''; ?>" href="gallery.php"><?php echo $_SESSION['gallery']; ?></a></li>
                         <li><a class="nav-link <?php echo $page == 'designforum' ? 'active' : ''; ?>" href="designforum.php"><?php echo $_SESSION['design_forum']; ?></a></li>
-                        <li><a class="nav-link <?php echo $page == 'contact' ? 'active' : ''; ?>" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'policy' ? 'active' : ''; ?>" href="policy.php"><?php echo $_SESSION['policy']; ?></a></li>
+                        <li><a class="nav-link <?php echo $page == 'contact' ? 'active' : ''; ?>" href="contact.php"><?php echo $_SESSION['contact']; ?></a></li>                        
                     </ul>
                 </nav>
             </div>                

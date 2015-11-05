@@ -65,25 +65,49 @@
             </div>                                         
           </div>
         </div>
-      </div>
-      <div class="contact-form">
-        <div class="inputs">
-          <div class="form-control">
-              <input class="control" type="text" placeholder="<?php echo $_SESSION['lblFullName']; ?>" />
-          </div>
-          <div class="form-control">
-              <input class="control" type="email" placeholder="<?php echo $_SESSION['lblEmail']; ?>" />
-          </div>
-          <div class="form-control">
-              <input class="control" type="text" placeholder="<?php echo $_SESSION['lblContact']; ?>" />
-          </div>
-          <div class="form-control">
-              <textarea class="control" placeholder="<?php echo $_SESSION['lblContent']; ?>"></textarea>
-          </div>                    
-        </div>
-        <div class="actions center">
-          <button class="btn btn-primary"><?php echo $_SESSION['lblSend']; ?></button>
-        </div>
+      </div>  
+      <div class="content-block design-form">
+         <div class="overlay"></div>
+           <div class="content-block-details">
+              <h3 class="title right"><?php echo $_SESSION['lblJobOpportunity']; ?></h3>
+              <div class="img-wrapper">
+                 <img src="img/job_opp.png" alt="<?php echo $_SESSION['lblJobOpportunity']; ?>">
+              </div>             
+              <div class="content">                  
+                  <?php echo $_SESSION['lblJobOpportunityContent']; ?>
+              </div>
+         </div>
+      </div>    
+      <div class="content-block design-form">
+         <div class="overlay"></div>
+           <div class="content-block-details">
+               <h3 class="title right"><?php echo $_SESSION['lblClientEnquiry']; ?></h3>
+               <div class="img-wrapper">
+                   <img src="img/contact.png" alt="<?php echo $_SESSION['lblClientEnquiry']; ?>">
+               </div>             
+               <div class="content">
+                  <div class="contact-form">
+                    <div class="inputs">
+                      <div class="form-control">
+                          <input class="control" type="text" placeholder="<?php echo $_SESSION['lblFullName']; ?>" />
+                      </div>
+                      <div class="form-control">
+                          <input class="control" type="email" placeholder="<?php echo $_SESSION['lblEmail']; ?>" />
+                      </div>
+                      <div class="form-control">
+                          <input class="control" type="text" placeholder="<?php echo $_SESSION['lblContact']; ?>" />
+                      </div>
+                      <div class="form-control">
+                          <textarea class="control" placeholder="<?php echo $_SESSION['lblContent']; ?>"></textarea>
+                      </div>
+                      <div style="margin-bottom: 25px;"><?php echo $_SESSION['lblFormConfidentialInfo']; ?></div>
+                    </div>
+                    <div class="actions center">
+                      <button class="btn btn-primary"><?php echo $_SESSION['lblSend']; ?></button>
+                    </div>
+                  </div>
+               </div>
+           </div>
       </div>
   </div> <!-- #main -->
 </div> <!-- #main-container -->

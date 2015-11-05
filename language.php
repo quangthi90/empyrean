@@ -13,6 +13,7 @@ switch ($code) {
         $_SESSION['gallery'] = 'Bộ sưu tập';
         $_SESSION['design_forum'] = 'Diễn đàn thiết kế';
         $_SESSION['contact'] = 'Liên hệ';
+        $_SESSION['policy'] = 'Chính sách';
         $_SESSION['languages'] = 'Ngôn ngữ';
         $_SESSION['english'] = 'Tiếng Anh';
         $_SESSION['chinese'] = 'Trung Quốc';
@@ -49,6 +50,11 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "Thông tin liên lạc";
         $_SESSION['forumdesign_contact_info'] = "Chúng tôi muốn có thông tin về bạn. Xin hãy điền thông tin của bạn vào form bên dưới. Những thông tin này sẽ được lưu giữ đảm bảo.";
         
+        $_SESSION['lblClientEnquiry'] = "Yêu cầu của khách hàng";
+        $_SESSION['lblFormConfidentialInfo'] = "* Tất cả thông tin của bạn sẽ được bảo mật tuyệt đối và không được sử dụng bởi bên thứ ba.";
+        $_SESSION['lblJobOpportunity'] = "Cơ hội việc làm";
+        $_SESSION['lblJobOpportunityContent'] = "<p>Chúng tôi đang tích cực tuyển dụng nhân viên mới cho việc mở rộng kinh doanh và thành lập những bộ phận mới. Bạn có thể trở thành nhân viên của chúng tôi ở các vị trí: nhân viên văn phòng, kĩ sư thiết kế hoặc quản lý dự án. <br/>Nếu bạn cảm thấy thích thú với cơ hội này, hãy liên lạc trực tiếp với chúng tôi qua email: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "Nội dung chính sách đang được cập nhật ...";
         break;
 
     case 'BA':
@@ -58,6 +64,7 @@ switch ($code) {
         $_SESSION['gallery'] = 'Galeri';
         $_SESSION['design_forum'] = 'Desain Forum';
         $_SESSION['contact'] = 'Kontak';
+        $_SESSION['policy'] = 'Polis';
         $_SESSION['languages'] = 'Bahasa';
         $_SESSION['english'] = 'Inggris';
         $_SESSION['chinese'] = 'Cina';
@@ -123,6 +130,11 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
 
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "";
         break;
 
     case 'JP':
@@ -132,6 +144,7 @@ switch ($code) {
         $_SESSION['gallery'] = 'ギャラリー';
         $_SESSION['design_forum'] = 'デザインフォーラム';
         $_SESSION['contact'] = 'コンタクト';
+        $_SESSION['policy'] = 'ポリシ';
         $_SESSION['languages'] = '言語';
         $_SESSION['english'] = '英語';
         $_SESSION['chinese'] = '中国の';
@@ -201,6 +214,11 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
 
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "";
         break;
 
     case 'KO':
@@ -210,6 +228,7 @@ switch ($code) {
         $_SESSION['gallery'] = '갤러리';
         $_SESSION['design_forum'] = '디자인 포럼';
         $_SESSION['contact'] = '접촉';
+        $_SESSION['policy'] = '정책';
         $_SESSION['languages'] = '언어';
         $_SESSION['english'] = '영어';
         $_SESSION['chinese'] = '중국어';
@@ -279,6 +298,11 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
 
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "";
         break;
 
     case 'MY':
@@ -288,6 +312,7 @@ switch ($code) {
         $_SESSION['gallery'] = 'ဓာတ်ပုံပြခန်း';
         $_SESSION['design_forum'] = 'ဒီဇိုင်းကိုဖိုရမ်၏';
         $_SESSION['contact'] = 'ဆက်သွယ်ရန်';
+        $_SESSION['policy'] = 'ပေါ်လစီ';
         $_SESSION['languages'] = 'ဘာသာစကားများကို';
         $_SESSION['english'] = 'အင်္ဂလိပ်';
         $_SESSION['chinese'] = 'တရုတ်';
@@ -357,6 +382,12 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
 
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "";
         break;
 
     case 'CN':
@@ -366,6 +397,7 @@ switch ($code) {
         $_SESSION['gallery'] = '画廊';
         $_SESSION['design_forum'] = '设计论坛';
         $_SESSION['contact'] = '联系我们';
+        $_SESSION['policy'] = '方針';
         $_SESSION['languages'] = '語言';
         $_SESSION['english'] = '英語';
         $_SESSION['chinese'] = '中國';
@@ -430,6 +462,12 @@ switch ($code) {
         $_SESSION['forumdesign_objective_content'] = "<p> The objectives of this design forum is to help build students' confidence in design. <br> We will help them in seeing the physical world in a new realm in order to be more design conscious in problem solving.<br> They will learn through the macro and micro views of components, hence enlarging their perspective in perception in their design concept. </p> <p class='center'> <strong> - When one cannot see beyond the dimensions of life, nothing profitable can be created. - <br> Eric's Haywood Chang's quote </strong> </p> <p> Upon registering with us, students from any design faculty may submit their work for design critics or for discussion.<br> In returned, we will post up these works (after having approval from individual student) for sharing so that more can learn and benefit from it. </p>";
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
+
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "";
         break;
     
     default:
@@ -439,6 +477,7 @@ switch ($code) {
         $_SESSION['gallery'] = 'Gallery';
         $_SESSION['design_forum'] = 'Design Forum';
         $_SESSION['contact'] = 'Contact';
+        $_SESSION['policy'] = 'Policy';
         $_SESSION['languages'] = 'Languages';
         $_SESSION['english'] = 'English';
         $_SESSION['chinese'] = 'Chinese';
@@ -496,8 +535,8 @@ switch ($code) {
         $_SESSION['lblFullName']  = 'FULL NAME';
         $_SESSION['lblEmail']  = 'EMAIL';
         $_SESSION['lblSchool']  = 'SCHOOL';
-        $_SESSION['lblContact']  = 'Contact';
-        $_SESSION['lblContent']  = 'Content';
+        $_SESSION['lblContact']  = "CLIENT'S CONTACT";
+        $_SESSION['lblContent']  = 'CONTENT';
         $_SESSION['lblFaculty']  = 'FACULTY';
         $_SESSION['lblYearStarted']  = 'YEAR STARTED';
         $_SESSION['lblAspiration']  = "WHAT's YOUR CURRENT/FUTURE ASPIRATION";
@@ -508,5 +547,10 @@ switch ($code) {
         $_SESSION['forumdesign_contact_label'] = "International Design Student Contact";
         $_SESSION['forumdesign_contact_info'] = "We would like to know you better, kindly help fill in the as below and all information will be confidential.";
 
+        $_SESSION['lblClientEnquiry'] = "Client's Enquiry";
+        $_SESSION['lblFormConfidentialInfo'] = "* All above information will be kept confidential and will not be used by any third party.";
+        $_SESSION['lblJobOpportunity'] = "Job Opportunity";
+        $_SESSION['lblJobOpportunityContent'] = "<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>";
+        $_SESSION['lblPolicyContent'] = "Policy content is being updated ...";
         break;
 }

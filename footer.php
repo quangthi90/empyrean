@@ -1,7 +1,9 @@
         <div class="footer-container">            
             <footer>
                 <div class="overlay"></div> 
-                <p class="center"><?php echo $_SESSION['copyright']; ?></p>
+                <p class="center">
+                    <span> <?php echo $_SESSION['copyright']; ?> </span>                    
+                </p>
             </footer>
         </div>
         <script src="js/vendor/jquery-1.11.2.min.js"></script>

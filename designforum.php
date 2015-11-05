@@ -26,7 +26,7 @@
                <h3 class="title right"><?php echo $_SESSION['forumdesign_contact_label']; ?></h3>
                <div class="clear"></div>
                <div class="img-wrapper">
-                   <img src="img/eidt.png" alt="Our Mission">
+                   <img src="img/contact.png" alt="Contact">
                </div>             
                <div class="content">
                    <p>

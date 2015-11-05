@@ -211,7 +211,7 @@ header {
 header .title {
     float: none;
     display: block;
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     margin: 0;
     text-align: center;
 }
@@ -517,13 +517,11 @@ MAIN UI
 }
 .content-block .title {
     padding: 0 0 7px 0;
-    margin: 0;
+    margin: 0 0 20px 0;
     border-bottom: 1px solid #c22b18;
     text-transform: uppercase;
     font-size: 22px;
-    font-weight: 400;
-    float: right;
-    width: 73%;
+    font-weight: 400;    
 }
 .content-block .content {
     text-align: justify;
@@ -790,7 +788,7 @@ MAIN UI
     .menu.show nav {
         display: block;
         position: absolute;
-        top: 85px;
+        top: 88px;
         left: 0;
         right: 0;
         border: none;
