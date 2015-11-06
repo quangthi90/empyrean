@@ -3,6 +3,32 @@
 <?php $page_title = $_SESSION['contact']; ?>
 
 <?php include 'header.php'; ?>
+
+<?php
+
+  $abc = "None";
+  if(isset($_REQUEST["send"])) {
+    
+    $userEmail = $_REQUEST["send"];
+    $userFullName = $_REQUEST["fullname"];
+    $userContact = $_REQUEST["contact"];
+    $userContent = $_REQUEST["content"];
+
+    if($userEmail && $userFullName && $userContact && $userContent) {
+      include 'mail.php';
+      $message = "Alo ";
+      $mail = new Mail();
+      $mail->setTo('nvthiet.khtn08@gmail.com';
+      $mail->setFrom('');
+      $mail->setSender('Empyrean Design');
+      $mail->setSubject("Welcome");
+      $mail->setText(html_entity_decode($message, ENT_QUOTES, 'UTF-8'));
+      $mail->send();
+    }
+  }
+
+ ?>
+
 <div class="main-container">
   <div class="main clearfix wrapper">
       <div class="main-top-gap"></div>
@@ -87,24 +113,27 @@
                </div>             
                <div class="content">
                   <div class="contact-form">
-                    <div class="inputs">
-                      <div class="form-control">
-                          <input class="control" type="text" placeholder="<?php echo $_SESSION['lblFullName']; ?>" />
+                    <form action="" method="post">
+                      <div class="inputs">
+                        <div class="form-control">
+                            <input class="control" name="fullname" type="text" placeholder="<?php echo $_SESSION['lblFullName']; ?>" />
+                        </div>
+                        <div class="form-control">
+                            <input class="control" name="email" type="email" placeholder="<?php echo $_SESSION['lblEmail']; ?>" />
+                        </div>
+                        <div class="form-control">
+                            <input class="control" name="contact" type="text" placeholder="<?php echo $_SESSION['lblContact']; ?>" />
+                        </div>
+                        <div class="form-control">
+                            <textarea class="control" name="content" placeholder="<?php echo $_SESSION['lblContent']; ?>"></textarea>
+                        </div>
+                        <div style="margin-bottom: 25px;"><?php echo $_SESSION['lblFormConfidentialInfo']; ?></div>
                       </div>
-                      <div class="form-control">
-                          <input class="control" type="email" placeholder="<?php echo $_SESSION['lblEmail']; ?>" />
+                      <div class="actions center">
+                        <label><?php echo $abc; ?></label>
+                        <button type="submit" name="send" class="btn btn-primary"><?php echo $_SESSION['lblSend']; ?></button>
                       </div>
-                      <div class="form-control">
-                          <input class="control" type="text" placeholder="<?php echo $_SESSION['lblContact']; ?>" />
-                      </div>
-                      <div class="form-control">
-                          <textarea class="control" placeholder="<?php echo $_SESSION['lblContent']; ?>"></textarea>
-                      </div>
-                      <div style="margin-bottom: 25px;"><?php echo $_SESSION['lblFormConfidentialInfo']; ?></div>
-                    </div>
-                    <div class="actions center">
-                      <button class="btn btn-primary"><?php echo $_SESSION['lblSend']; ?></button>
-                    </div>
+                    </form>
                   </div>
                </div>
            </div>
