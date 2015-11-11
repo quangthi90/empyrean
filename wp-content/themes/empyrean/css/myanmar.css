@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Myanmar Sans Pro';
+  src: url("fonts/MyanmarSansPro-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Pyi Daung Su';
+  src: url("fonts/pyidaungsu-1.1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+	font-family: 'Pyi Daung Su' !important;
+}
