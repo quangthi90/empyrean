@@ -5,54 +5,26 @@
             </div>
             <div class="trigger"></div>
             <div class="text">
-                <span class="vertical-text">languages</span>
+                <span class="vertical-text"><?php pll_e("Language") ?></span>
             </div>
         </div>
         <div class="controlpanel-details">
             <div class="overlay controlpanel-details-overlay">
             </div>
             <ul class="none-style languages">
-                <li>
-                    <a href="#" data-code="EN" class="lang-option" title="english">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/en.png" alt="english">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-code="CN" class="lang-option" title="chinese">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/ch.png" alt="chinese">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-code="BA" class="lang-option" title="bahasa">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/ba.png" alt="bahasa">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-code="JP" class="lang-option" title="japanese">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/jp.png" alt="japanese">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-code="KO" class="lang-option" title="korean">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/ko.png" alt="korean">
-                    </a>
-                </li>                            
-                <li>
-                    <a href="#" data-code="MY" class="lang-option" title="myanmar">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/my.png" alt="myanmar">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" data-code="VI" class="lang-option" title="vietnamese">
-                        <img class="flag-icon" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/flags/vi.png" alt="vietnamese">
-                    </a>
-                </li>
+                <?php foreach (pll_the_languages(array('raw' => 1, 'hide_if_empty' => 0)) as $key => $lang) { ?>
+                    <li>
+                        <a href="<?php echo $lang['url']; ?>" data-code="<?php echo $lang['slug']; ?>" class="lang-option" title="<?php echo $lang['name']; ?>">
+                            <img class="flag-icon" src="<?php echo $lang['flag']; ?>" alt="<?php echo $lang['name']; ?>">
+                        </a>
+                    </li>
+                <?php } ?>
             </ul>
             <div class="music-control">
-                <div class="label">music</div>
+                <div class="label"><?php pll_e("music") ?></div>
                 <div class="music-trigger disable-selection">
-                    <span class="text lblon">on</span>
-                    <span class="text lbloff">off</span>
+                    <span class="text lblon"><?php pll_e("on") ?></span>
+                    <span class="text lbloff"><?php pll_e("off") ?></span>
                 </div>                            
             </div>
         </div>              
@@ -63,7 +35,7 @@
     <div class="mobile-controlpanel-wrapper">
         <div class="overlay controller-overlay">                    
         </div>
-        <div class="controlpanel-details">
+        <div class="controlpanel-details">            
             <div class="music-control">
                 <div class="label">music</div>
                 <div class="music-trigger disable-selection">
@@ -75,35 +47,13 @@
                 <div class="label language-trigger">languages</div> 
                 <div class="language-list">
                     <ul class="none-style">
-                        <li>
-                            <a href="#" data-code="EN" class="lang-option" title="english">english
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-code="CN" class="lang-option" title="chinese">
-                            chinese
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-code="BA" class="lang-option" title="bahasa">bahasa
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-code="JP" class="lang-option" title="japanese">japanese
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-code="KO" class="lang-option" title="korean">korean
-                            </a>
-                        </li>                            
-                        <li>
-                            <a href="#" data-code="MY" class="lang-option" title="myanmar">myanmar
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-code="VI" class="lang-option" title="vietnamese">vietnamese
-                            </a>
-                        </li>                                
+                        <?php foreach (pll_the_languages(array('raw' => 1, 'hide_if_empty' => 0)) as $key => $lang) { ?>
+                            <li>
+                                <a href="<?php echo $lang['url']; ?>" data-code="<?php echo $lang['slug']; ?>" class="lang-option" title="<?php echo $lang['name']; ?>">
+                                    <?php echo $lang['name']; ?>
+                                </a>
+                            </li>
+                        <?php } ?>                              
                     </ul>
                     <ul class="none-style actions">
                         <li><a href="#" class="language-cancel">Cancel</a></li>

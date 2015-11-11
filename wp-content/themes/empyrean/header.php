@@ -30,14 +30,17 @@
             </h1>
             <div class="menu">
                 <span class="menu-toogle"></span>
-                <nav>
-                    <ul>
-                        <li><a class="nav-link" href="home.php">adfasf</a></li>
-                        <li><a class="nav-link" href="home.php">adfasf</a></li>
-                        <li><a class="nav-link" href="home.php">adfasf</a></li>
-                        <li><a class="nav-link" href="home.php">adfasf</a></li>
-                    </ul>
-                </nav>
+                <?php if ( has_nav_menu( 'primary' ) ) : ?>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php
+						// Primary navigation menu.
+						wp_nav_menu( array(
+							'menu_class'     => 'nav-link',
+							'theme_location' => 'primary',
+						) );
+					?>
+				</nav><!-- .main-navigation -->
+			<?php endif; ?>
             </div>                
         </header>
     </div>

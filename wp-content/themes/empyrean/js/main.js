@@ -71,11 +71,6 @@ var App = {};
 				languageControl.removeClass("show");
 			}
 		});
-		$(".lang-option").on("click", function(e){
-			e.preventDefault();
-			changeLanguage($(this).data("code"));
-		});
-
 		menu.find(".menu-toogle").on("click", function(){
 			if(languageControl.hasClass("show")){				
 				languageControl.removeClass("show");

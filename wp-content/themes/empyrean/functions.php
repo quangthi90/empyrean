@@ -1,5 +1,37 @@
 <?php
 
+function registerText(){
+	$groupPageTitle = "Page Title";
+	$groupLabels = "Texts";
+
+	pll_register_string("Welcome","welcome", $groupPageTitle, false);
+	pll_register_string("Home","home", $groupPageTitle, false);
+	pll_register_string("About Us","about_us", $groupPageTitle, false);
+	pll_register_string("Gallery","gallery",  $groupPageTitle, false);
+	pll_register_string("Design Forum","design_forum",  $groupPageTitle, false);
+	pll_register_string("Contact","contact",  $groupPageTitle, false);
+	pll_register_string("Policy","policy",  $groupPageTitle, false);
+	pll_register_string("Music","music",  $groupLabels, false);
+	pll_register_string("ON","on",  $groupLabels, false);
+	pll_register_string("OFF","off",  $groupLabels, false);
+	pll_register_string("Copyright &copy; 2015 Empyrean Design. All rights reserved.","copyright",  $groupLabels, true);
+
+	pll_register_string("FULL NAME","lblFullName",  $groupLabels, false);
+	pll_register_string("EMAIL","lblEmail",  $groupLabels, false);
+	pll_register_string("SCHOOL","lblSchool",  $groupLabels, false);
+	pll_register_string("CLIENT'S CONTACT", "lblContact",$groupLabels, false);
+	pll_register_string("CONTENT", "lblContent", $groupLabels, false);
+	pll_register_string("FACULTY","lblFaculty",  $groupLabels, false);
+	pll_register_string("YEAR STARTED","lblYearStarted",  $groupLabels, false);
+	pll_register_string("WHAT's YOUR CURRENT/FUTURE ASPIRATION","lblAspiration",  $groupLabels, true);
+	pll_register_string("Send", "lblSend", $groupLabels, false);
+	pll_register_string("Client's Enquiry","lblClientEnquiry",  $groupLabels, false);
+	pll_register_string("* All above information will be kept confidential and will not be used by any third party.", "lblFormConfidentialInfo", $groupLabels, true);
+	pll_register_string("Job Opportunity","lblJobOpportunity",  $groupLabels, false);
+	pll_register_string("<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>","lblJobOpportunityContent",  $groupLabels, true);
+	
+}
+
 if ( ! function_exists( 'app_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -19,7 +51,7 @@ function app_setup() {
 	 */
 	load_theme_textdomain( 'empyrean', get_template_directory() . '/languages' );
 
-	pll_register_string("demo", "Demo");//$name, $string, $group, $multiline);
+	registerText();
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,8 +74,7 @@ function app_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'empyrean' ),
-		'social'  => __( 'Social Links Menu', 'empyrean' ),
+		'primary' => __( 'Primary Menu',      'empyrean' )
 	) );
 
 	/*
@@ -75,15 +106,6 @@ add_action( 'after_setup_theme', 'app_setup' );
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function app_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Widget Area', 'twentyfifteen' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
 }
 add_action( 'widgets_init', 'app_widgets_init' );
 
@@ -144,3 +166,5 @@ function app_scripts() {
 	wp_enqueue_script( 'app-js-main', get_template_directory_uri() . '/js/main.js' );     
 }
 add_action( 'wp_enqueue_scripts', 'app_scripts' );
+
+require get_template_directory() . '/inc/template-tags.php';
