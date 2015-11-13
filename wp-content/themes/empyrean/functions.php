@@ -186,5 +186,4 @@ function getPageLink($page_slug){
     } 
     return home_url();
 }
-
 require get_template_directory() . '/inc/template-tags.php';
