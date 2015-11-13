@@ -21,10 +21,10 @@
                 <?php } ?>
             </ul>
             <div class="music-control">
-                <div class="label"><?php pll_e("music") ?></div>
+                <div class="label"><?php pll_e("Music") ?></div>
                 <div class="music-trigger disable-selection">
-                    <span class="text lblon"><?php pll_e("on") ?></span>
-                    <span class="text lbloff"><?php pll_e("off") ?></span>
+                    <span class="text lblon"><?php pll_e("ON") ?></span>
+                    <span class="text lbloff"><?php pll_e("OFF") ?></span>
                 </div>                            
             </div>
         </div>              
@@ -37,14 +37,14 @@
         </div>
         <div class="controlpanel-details">            
             <div class="music-control">
-                <div class="label">music</div>
+                <div class="label"><?php pll_e("Music") ?></div>
                 <div class="music-trigger disable-selection">
-                    <span class="text lblon">on</span>
-                    <span class="text lbloff">off</span>
+                    <span class="text lblon"><?php pll_e("ON") ?></span>
+                    <span class="text lbloff"><?php pll_e("OFF") ?></span>
                 </div>          
             </div>
             <div class="language-control">
-                <div class="label language-trigger">languages</div> 
+                <div class="label language-trigger"><?php pll_e("Language") ?></div> 
                 <div class="language-list">
                     <ul class="none-style">
                         <?php foreach (pll_the_languages(array('raw' => 1, 'hide_if_empty' => 0)) as $key => $lang) { ?>
@@ -56,7 +56,7 @@
                         <?php } ?>                              
                     </ul>
                     <ul class="none-style actions">
-                        <li><a href="#" class="language-cancel">Cancel</a></li>
+                        <li><a href="#" class="language-cancel"><?php pll_e("Cancel") ?></a></li>
                     </ul>
                 </div> 
             </div>

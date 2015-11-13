@@ -80,7 +80,7 @@ body.page-template-page-contact{
 body.page-template-page-aboutus{
     background: url(../img/background/about.jpg) no-repeat center center fixed; 
 }
-body.page-template-page-gallery{
+.page-template-page-gallery {
     background: url(../img/background/gallery.jpg) no-repeat center center fixed; 
 }
 body.page-template-page-designforum{
@@ -432,10 +432,10 @@ MAIN UI
     z-index: 100;
 }
 
-.home .news-list {
+.news-list {
 
 }
-.home .news-list .header {
+.news-list .header {
     text-transform: uppercase;
     margin: 0;
     padding-bottom: 10px;
@@ -444,9 +444,9 @@ MAIN UI
     color: #FFF;
     margin-bottom: 15px;
 }
-.home .news-list .item-list {
+.news-list .item-list {
 }
-.home .news-list .news-item {
+.news-list .news-item {
     width: 43%;
     float:  left;
     margin-left: 2%;
@@ -455,7 +455,7 @@ MAIN UI
     overflow: hidden;
     position: relative;
 }
-.home .news-list .news-item .overlay {
+.news-list .news-item .overlay {
     /* IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
       /* IE 5-7 */
@@ -614,28 +614,28 @@ MAIN UI
     height: 88px;
 }
 
-.gallery .album-category {
+.page-template-page-gallery .album-category {
     margin-bottom: 30px;
 }
-.gallery .item-list {    
+.page-template-page-gallery .item-list {    
 }
-.gallery .item-list .item {
+.page-template-page-gallery .item-list .item {
     float: left;
     width: 23%;
     margin: 1%;
 }
-.gallery .item-list .thumbs {
+.page-template-page-gallery .item-list .thumbs {
     position: relative;
     margin: 0 auto;
     height: 160px;
     max-width: 90%;
     margin-bottom: 10px;
 }
-.gallery .item-list .thumbs > a {
+.page-template-page-gallery .item-list .thumbs > a {
     display: block;
     width: 100%;
 }
-.gallery .item-list .thumbs img {
+.page-template-page-gallery .item-list .thumbs img {
     display: block;    
     position: absolute;
     width: 100%;
@@ -644,39 +644,39 @@ MAIN UI
     outline: none;
     border: 1px solid #FFF;
 }
-.gallery .item-list .album .thumbs img:nth-child(1) {
+.page-template-page-gallery .item-list .album .thumbs img:nth-child(1) {
     -ms-transform: rotate(2deg); /* IE 9 */
     -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
     -moz-transform: rotate(2deg); /* FF*/
     transform: rotate(2deg);
 }
-.gallery .item-list .album .thumbs img:nth-child(2) {
+.page-template-page-gallery .item-list .album .thumbs img:nth-child(2) {
     -ms-transform: rotate(-2deg); /* IE 9 */
     -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
     -moz-transform: rotate(-2deg); /* FF*/
     transform: rotate(-2deg);
 }
-.gallery .item-list .item-info {
+.page-template-page-gallery .item-list .item-info {
     position: relative;
     color: #FFF;
     padding: 10px;    
 }
-.gallery .album-category .item-list .item-info {
+.page-template-page-gallery .album-category .item-list .item-info {
     display: block;
 }
-.gallery .item-list .item-info .overlay {    
+.page-template-page-gallery .item-list .item-info .overlay {    
 }
-.gallery .item-list .item-name {
+.page-template-page-gallery .item-list .item-name {
     font-weight: 400;
     font-size: 14px;
 }
 
-.gallery img.mfp-img {
+.page-template-page-gallery img.mfp-img {
     border: 3px solid #FFF;
     padding-top: 0;
     padding-bottom: 0;
 }
-.gallery .mfp-close {
+.page-template-page-gallery .mfp-close {
     right: -33px;
     background-color: #FFF;
     width: 35px;
@@ -696,23 +696,23 @@ MAIN UI
     /* Good browsers */
     opacity: 1;
 }
-.gallery figcaption{
+.page-template-page-gallery figcaption{
     display: none;
 }
 
-.gallery .item-list.owl-carousel .item {
+.page-template-page-gallery .item-list.owl-carousel .item {
     float: none;
     width: 100%;
     margin: 0;
 }
-.gallery .item-list.owl-carousel .thumbs {
+.page-template-page-gallery .item-list.owl-carousel .thumbs {
     position: relative;
     margin: 0 auto;
     height: auto;
     max-width: 100%;
     margin-bottom: 10px;
 }
-.gallery .item-list.owl-carousel .thumbs img {
+.page-template-page-gallery .item-list.owl-carousel .thumbs img {
     display: block;    
     height: auto;
     box-shadow: none;
@@ -720,11 +720,11 @@ MAIN UI
     position: relative;
     border: 0px solid #FFF;
 }
-.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-prev {
+.page-template-page-gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-prev {
     top: 25%;
     left: -5px !important;
 }
-.gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-next {
+.page-template-page-gallery .item-list.owl-theme .owl-controls .owl-buttons div.owl-next {
     top: 25%;
     right: -5px !important;
 }
@@ -754,7 +754,7 @@ MAIN UI
         width: 100%;
     }
 
-    .gallery .item-list .item {
+    .page-template-page-gallery .item-list .item {
         width: 31%;
         margin: 1%;
     }
@@ -819,7 +819,7 @@ MAIN UI
     /* ==============
         MOBILE: Main
        ============== */
-    body.gallery {        
+    body.page-template-page-gallery {        
         background-position: -300px -15px;
     }
     .footer-container {
@@ -974,7 +974,7 @@ MAIN UI
         width: 100%;
     }
 
-    .gallery .item-list .item {
+    .page-template-page-gallery .item-list .item {
         width: 48%;
         margin: 1%;
     }
@@ -1006,7 +1006,7 @@ MAIN UI
     .wrapper {        
         margin: 0 auto;
     }
-    .gallery .item-list .thumbs {
+    .page-template-page-gallery .item-list .thumbs {
         height: 200px;
     }
 }

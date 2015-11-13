@@ -2,34 +2,40 @@
 
 function registerText(){
 	$groupPageTitle = "Page Title";
+	$groupContent = "Page Title";
 	$groupLabels = "Texts";
 
-	pll_register_string("Welcome","welcome", $groupPageTitle, false);
-	pll_register_string("Home","home", $groupPageTitle, false);
-	pll_register_string("About Us","about_us", $groupPageTitle, false);
-	pll_register_string("Gallery","gallery",  $groupPageTitle, false);
-	pll_register_string("Design Forum","design_forum",  $groupPageTitle, false);
-	pll_register_string("Contact","contact",  $groupPageTitle, false);
-	pll_register_string("Policy","policy",  $groupPageTitle, false);
-	pll_register_string("Music","music",  $groupLabels, false);
-	pll_register_string("ON","on",  $groupLabels, false);
-	pll_register_string("OFF","off",  $groupLabels, false);
-	pll_register_string("Copyright &copy; 2015 Empyrean Design. All rights reserved.","copyright",  $groupLabels, true);
+	pll_register_string("welcome","Welcome", $groupPageTitle, false);
+	pll_register_string("home","Home", $groupPageTitle, false);
+	pll_register_string("about_us","About Us", $groupPageTitle, false);
+	pll_register_string("gallery", "Gallery", $groupPageTitle, false);
+	pll_register_string("design_forum", "Design Forum", $groupPageTitle, false);
+	pll_register_string("contact", "Contact", $groupPageTitle, false);
+	pll_register_string("policy", "Policy", $groupPageTitle, false);
 
-	pll_register_string("FULL NAME","lblFullName",  $groupLabels, false);
-	pll_register_string("EMAIL","lblEmail",  $groupLabels, false);
-	pll_register_string("SCHOOL","lblSchool",  $groupLabels, false);
-	pll_register_string("CLIENT'S CONTACT", "lblContact",$groupLabels, false);
-	pll_register_string("CONTENT", "lblContent", $groupLabels, false);
-	pll_register_string("FACULTY","lblFaculty",  $groupLabels, false);
-	pll_register_string("YEAR STARTED","lblYearStarted",  $groupLabels, false);
-	pll_register_string("WHAT's YOUR CURRENT/FUTURE ASPIRATION","lblAspiration",  $groupLabels, true);
-	pll_register_string("Send", "lblSend", $groupLabels, false);
-	pll_register_string("Client's Enquiry","lblClientEnquiry",  $groupLabels, false);
-	pll_register_string("* All above information will be kept confidential and will not be used by any third party.", "lblFormConfidentialInfo", $groupLabels, true);
-	pll_register_string("Job Opportunity","lblJobOpportunity",  $groupLabels, false);
-	pll_register_string("<p>We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a></p>","lblJobOpportunityContent",  $groupLabels, true);
-	
+	pll_register_string("our_mission", "Our Mission", $groupLabels, false);
+	pll_register_string("our_mission_content", "It is our belief that nothing exists by itself in this world. We co-exist with one another and we are interdependent on one another. This creates greater dimension and contributes colours to the earth. Good designs are not good enough; a great product is one that will be able to sell itself. We believe that the design that sells is the design that is most relevant and appealing to the consumer...", $groupContent, true);
+	pll_register_string("our_story", "Our Story", $groupLabels, false);
+	pll_register_string("our_story_content", "Empyrean Design was founded in 1992 by Eric Haywood Chang. Having graduated from LaSalle College of the Arts in Singapore; majoring in Interior Designing and minor in Product Designing and Fine Arts, he is a self-taught architect that possesses many years of experience and expertise in the related field. He is passionate about design, arts, and music...", $groupContent, true);
+
+	pll_register_string("music", "Music", $groupLabels, false);
+	pll_register_string("on", "ON", $groupLabels, false);
+	pll_register_string("off", "OFF", $groupLabels, false);
+	pll_register_string("cancel", "Cancel", $groupLabels, false);
+	pll_register_string("copyright", "Copyright &copy; 2015 Empyrean Design. All rights reserved.", $groupLabels, true);
+	pll_register_string("lblFullName", "FULL NAME", $groupLabels, false);
+	pll_register_string("lblEmail", "EMAIL", $groupLabels, false);
+	pll_register_string("lblSchool", "SCHOOL", $groupLabels, false);
+	pll_register_string("lblContact", "CLIENT'S CONTACT", $groupLabels, false);
+	pll_register_string("lblContent", "CONTENT", $groupLabels, false);
+	pll_register_string("lblFaculty", "FACULTY", $groupLabels, false);
+	pll_register_string("lblYearStarted", "YEAR STARTED", $groupLabels, false);
+	pll_register_string("lblAspiration", "WHAT's YOUR CURRENT/FUTURE ASPIRATION", $groupLabels, true);
+	pll_register_string("lblSend", "Send", $groupLabels, false);
+	pll_register_string("lblClientEnquiry", "Client's Enquiry", $groupLabels, false);
+	pll_register_string("lblFormConfidentialInfo", "* All above information will be kept confidential and will not be used by any third party.", $groupLabels, true);
+	pll_register_string("lblJobOpportunity", "Job Opportunity", $groupLabels, false);
+	pll_register_string("lblJobOpportunityContent", "We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a>", $groupLabels, true);		
 }
 
 if ( ! function_exists( 'app_setup' ) ) :
@@ -159,12 +165,26 @@ function app_scripts() {
 	wp_enqueue_style( 'style-carousel', get_template_directory_uri().'/js/vendor/carousel/owl.carousel.css' );
 	wp_enqueue_style( 'style-main', get_template_directory_uri().'/css/main.css' );
 
+	if(pll_current_language() == 'my'){
+		wp_enqueue_style( 'style-language-my', get_template_directory_uri().'/css/myanmar.css' );
+	}
+
 	wp_enqueue_script( 'app-js-jquery', get_template_directory_uri() . '/js/vendor/jquery-1.11.2.min.js');
 	wp_enqueue_script( 'app-js-popup', get_template_directory_uri() . '/js/vendor/popup/jquery.magnific-popup.min.js' );
-	wp_enqueue_script( 'app-js-backstretch', get_template_directory_uri() . '/js/vendor/jquery.backstretch.min.js' );
-	wp_enqueue_script( 'app-js-carousel', get_template_directory_uri() . '/js/vendor/carousel/owl.carousel.min.js' );
+	if ( is_home() ){
+		wp_enqueue_script( 'app-js-backstretch', get_template_directory_uri() . '/js/vendor/jquery.backstretch.min.js' );
+	}
 	wp_enqueue_script( 'app-js-main', get_template_directory_uri() . '/js/main.js' );     
 }
 add_action( 'wp_enqueue_scripts', 'app_scripts' );
+
+function getPageLink($page_slug){
+	$page = get_page_by_path($page_slug);
+    if ($page) {
+        $translationId = pll_get_post($page->ID, pll_current_language());
+		return get_page_link($translationId);
+    } 
+    return home_url();
+}
 
 require get_template_directory() . '/inc/template-tags.php';
