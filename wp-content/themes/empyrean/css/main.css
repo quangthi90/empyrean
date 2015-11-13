@@ -71,19 +71,19 @@ body {
       -o-background-size: cover;
     background-size: cover; 
 }
-body.home{
+body.page-template-page-home {
     background: url(../img/background/home.jpg) no-repeat center center fixed; 
 }
-body.contact{
+body.page-template-page-contact{
     background: url(../img/background/contact.jpg) no-repeat center center fixed; 
 }
-body.aboutus{
+body.page-template-page-aboutus{
     background: url(../img/background/about.jpg) no-repeat center center fixed; 
 }
-body.gallery{
+body.page-template-page-gallery{
     background: url(../img/background/gallery.jpg) no-repeat center center fixed; 
 }
-body.designforum{
+body.page-template-page-designforum{
     background: url(../img/background/designforum.jpg) no-repeat center center fixed; 
 }
 
@@ -259,7 +259,7 @@ header .menu {
     -o-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out;
 }
-.menu nav a:hover, nav a.active {
+.menu nav a:hover, nav a.active, nav li.current-menu-item a {
     border-bottom: 5px solid #c22b18;
     color: #0e0e0e;
     font-weight: 600;
@@ -807,6 +807,7 @@ MAIN UI
         margin: 0;
     }
     .menu nav li a.active,
+    .menu nav li.current_page_item a,
     .menu nav li a:hover {
         color: #c22b18;
         border: none;

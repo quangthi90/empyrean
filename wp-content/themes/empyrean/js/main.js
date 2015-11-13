@@ -127,14 +127,14 @@ var App = {};
 		}        
 
         //Background slides
-        if($(".welcome").length > 0){
+        if($("body.home").length > 0){
         	$.backstretch([
-			      "img/background/welcome.jpg"
-			    , "img/background/home.jpg"
-			    , "img/background/about.jpg"
-			    , "img/background/designforum.jpg"
-			    , "img/background/gallery.jpg"
-			    , "img/background/contact.jpg"
+			    window.THEME_URL + "img/background/welcome.jpg"
+			    , window.THEME_URL +  "img/background/home.jpg"
+			    , window.THEME_URL +  "img/background/about.jpg"
+			    , window.THEME_URL +  "img/background/designforum.jpg"
+			    , window.THEME_URL + "img/background/gallery.jpg"
+			    , window.THEME_URL + "img/background/contact.jpg"
 			], {duration: 9000, fade: 1000});
         }
 
@@ -203,8 +203,8 @@ var App = {};
 			}
 		}		   
 
-		if($("body.welcome").length > 0 || $("body.gallery").length > 0){
-			//toggleMusic(musicTrigger, true);
+		if($("body.home").length > 0 || $("body.page-template-page-gallery").length > 0){
+			toggleMusic(musicTrigger, true);
 		}else{
 			musicTrigger.addClass("off");
 		}		

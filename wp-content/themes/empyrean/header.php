@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/myanmar.css">        
     <?php } ?>
     
+    <script type="text/javascript">
+    window.THEME_URL = '<?php echo esc_url( get_template_directory_uri() ); ?>/';
+    </script>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

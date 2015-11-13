@@ -66,7 +66,10 @@
 <div class="overlay overlay-main hidden"></div>
 <div class="music-background hidden">
     <audio id="music-background" loop preload="true">
-        <!--<source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/fridrik_karlsson.mp3" type='audio/mp3'>-->
-        <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/thetruth.mp3" type='audio/mp3'>
+        <?php if ( is_page_template( 'page-gallery.php' ) ) { ?>
+            <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/fridrik_karlsson.mp3" type='audio/mp3'>
+        <?php } else { ?>
+            <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/thetruth.mp3" type='audio/mp3'>    
+        <?php } ?>
    </audio>
 </div>
