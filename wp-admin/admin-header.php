@@ -41,9 +41,9 @@ else
 	$admin_title = get_bloginfo( 'name' );
 
 if ( $admin_title == $title )
-	$admin_title = sprintf( __( '%1$s &#8212; WordPress' ), $title );
+	$admin_title = sprintf( __( '%1$s &#8212;' ), $title );
 else
-	$admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212; WordPress' ), $title, $admin_title );
+	$admin_title = sprintf( __( '%1$s &lsaquo; %2$s &#8212;' ), $title, $admin_title );
 
 /**
  * Filter the title tag content for an admin page.
@@ -69,11 +69,6 @@ wp_enqueue_script( 'svg-painter' );
 
 $admin_body_class = preg_replace('/[^a-z0-9_-]+/i', '-', $hook_suffix);
 ?>
-<style type="text/css">
-	.login h1 a{
-		background-image: url('images/logo.png') !important;
-	}
-</style>
 <script type="text/javascript">
 addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
 var ajaxurl = '<?php echo admin_url( 'admin-ajax.php', 'relative' ); ?>',

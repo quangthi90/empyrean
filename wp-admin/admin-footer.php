@@ -95,6 +95,13 @@ if ( function_exists('get_site_option') ) {
 ?>
 
 <div class="clear"></div></div><!-- wpwrap -->
-<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+<script type="text/javascript">
+	if(typeof wpOnload=='function')wpOnload();
+	jQuery("#wp-admin-bar-wp-logo").remove();
+	jQuery(".menu-icon-post").hide(0);
+	jQuery(".menu-icon-comments").hide(0);
+	jQuery(".menu-icon-plugins").hide(0);
+	jQuery(".menu-icon-dashboard > ul.wp-submenu-wrap").hide(0);
+</script>
 </body>
 </html>

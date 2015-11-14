@@ -29,6 +29,7 @@ if ( wp_is_mobile() )
 $title = __('Dashboard');
 $parent_file = 'index.php';
 
+/*
 $help = '<p>' . __( 'Welcome to your WordPress Dashboard! This is the screen you will see when you log in to your site, and gives you access to all the site management features of WordPress. You can get help for any screen by clicking the Help tab in the upper corner.' ) . '</p>';
 
 // Not using chaining here, so as to be parseable by PHP4.
@@ -88,6 +89,7 @@ $screen->set_help_sidebar(
 	'<p>' . __( '<a href="https://codex.wordpress.org/Dashboard_Screen" target="_blank">Documentation on Dashboard</a>' ) . '</p>' .
 	'<p>' . __( '<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>' ) . '</p>'
 );
+*/
 
 include( ABSPATH . 'wp-admin/admin-header.php' );
 ?>
