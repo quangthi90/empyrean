@@ -171,35 +171,38 @@ body.page-template-page-designforum{
 .owl-carousel .owl-pagination {
     top: 0;
 }
-.owl-theme .owl-controls .owl-buttons div.owl-prev {
+.owl-theme .owl-controls .owl-nav div.owl-prev {
     background: #000 url(../img/left.png) no-repeat center center;
     width: 12px;
     height: 50px;
     border-radius: 0;
     opacity: 0.7;
-    top: 145px;    
+    top: 165px;    
+    position: absolute;
+    text-indent: -9999px;
+    left: -5px;  
 }
-.owl-theme .owl-controls .owl-buttons div.owl-prev:hover {
+.owl-theme .owl-controls .owl-nav div.owl-prev:hover {
     opacity: 0.7;
     background: #000 url(../img/left_hover.png) no-repeat center center;
 }
-.owl-carousel:hover .owl-buttons div.owl-prev {
-    left: -5px;    
-}
-.owl-carousel:hover .owl-buttons div.owl-next {
-    right: -5px;
-}
-.owl-theme .owl-controls .owl-buttons div.owl-next {
+.owl-theme .owl-controls .owl-nav div.owl-next {
     background: #000 url(../img/right.png) no-repeat center center;
     width: 12px;
     height: 50px;
     border-radius: 0;
     opacity: 0.7;
-    top: 145px;
+    top: 165px;   
+    right: -5px;
+    position: absolute;
+    text-indent: -9999px;
 }
-.owl-theme .owl-controls .owl-buttons div.owl-next:hover {
+.owl-theme .owl-controls .owl-nav div.owl-next:hover {
     opacity: 0.7;
     background: #000 url(../img/right_hover.png) no-repeat center center;
+}
+.foo-item a {
+    margin: 0;   
 }
 
 /* ====================
@@ -764,7 +767,6 @@ MAIN UI
     font-weight: 400;
     text-transform: uppercase;
 }
-
 
 /* ===============
     ALL: IE Fixes
