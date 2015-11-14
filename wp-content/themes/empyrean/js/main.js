@@ -138,7 +138,7 @@ var App = {};
 		}
 
 		if($("body.home").length > 0 || $("body.page-template-page-gallery").length > 0){
-			//toggleMusic(musicTrigger, true);
+			toggleMusic(musicTrigger, true);
 		}else{
 			musicTrigger.addClass("off");
 		}		
