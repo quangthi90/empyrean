@@ -23,17 +23,9 @@ function registerText(){
 	pll_register_string("off", "OFF", $groupLabels, false);
 	pll_register_string("cancel", "Cancel", $groupLabels, false);
 	pll_register_string("copyright", "Copyright &copy; 2015 Empyrean Design. All rights reserved.", $groupLabels, true);
-	pll_register_string("lblFullName", "FULL NAME", $groupLabels, false);
-	pll_register_string("lblEmail", "EMAIL", $groupLabels, false);
-	pll_register_string("lblSchool", "SCHOOL", $groupLabels, false);
-	pll_register_string("lblContact", "CLIENT'S CONTACT", $groupLabels, false);
-	pll_register_string("lblContent", "CONTENT", $groupLabels, false);
-	pll_register_string("lblFaculty", "FACULTY", $groupLabels, false);
-	pll_register_string("lblYearStarted", "YEAR STARTED", $groupLabels, false);
-	pll_register_string("lblAspiration", "WHAT's YOUR CURRENT/FUTURE ASPIRATION", $groupLabels, true);
-	pll_register_string("lblSend", "Send", $groupLabels, false);
+	
 	pll_register_string("lblClientEnquiry", "Client's Enquiry", $groupLabels, false);
-	pll_register_string("lblFormConfidentialInfo", "* All above information will be kept confidential and will not be used by any third party.", $groupLabels, true);
+	pll_register_string("lblFormConfidentialInfo", "* All information will be kept confidential and will not be used by any third party.", $groupLabels, true);
 	pll_register_string("lblJobOpportunity", "Job Opportunity", $groupLabels, false);
 	pll_register_string("lblJobOpportunityContent", "We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a>", $groupLabels, true);		
 	pll_register_string("forumdesign_objective_label", "International Students' Design Forum", $groupLabels, false);
