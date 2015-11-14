@@ -31,7 +31,7 @@
 	                   </p>
 	                   <div class="contact-form">
 	                      	<p class="note"><?php pll_e("* All information will be kept confidential and will not be used by any third party.") ?></p>
-							<?php echo do_shortcode('[contact-form-7 id="245" title="Design Forum Contact"]') ?>
+	                      	<?php formContactForm('design-forum-contact') ?>
 	                    </div>                           
 	               </div>
 	           </div>

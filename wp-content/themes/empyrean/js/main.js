@@ -87,11 +87,6 @@ var App = {};
 			}
 		});
 
-		$("a.nav-link").on("click", function(){
-			$("a.nav-link").removeClass("active");
-			$(this).addClass("active");
-		});
-
 		if($("#player-trigger").length > 0){
 			$("#player-trigger").magnificPopup({
 			  	items: {
@@ -136,72 +131,11 @@ var App = {};
 			    , window.THEME_URL + "img/background/gallery.jpg"
 			    , window.THEME_URL + "img/background/contact.jpg"
 			], {duration: 9000, fade: 1000});
-        }
-
-		//Slide show
-		if($(".slide-show .item-list").length > 0){
-			$(".slide-show .item-list").owlCarousel(
-				{
-		            autoPlay: true,
-		            pagination : false,
-		            singleItem: true,
-		            navigation: true,
-		            stopOnHover: true,
-		            slideSpeed : 800,
-	        		rewindSpeed : 1000,
-		            navigationText: ['<span class="pre"></span>', '<span class="next"></span>']
-				}
-	        );
-		}
-		
-		if($(".image-list .item-list").length > 0){
-			$(".image-list .item-list").owlCarousel(
-				{
-					items: 5,
-		            autoPlay: false,
-		            singleItem: false,
-		            navigation: false,
-		            stopOnHover: true,
-		            rewindNav : false
-				}
-	        );
-		}		
+        }		
 
 		if($(".office-info.hidden").length > 0){
 			$(".office-info").removeClass("hidden");
 		}
-
-		//Album
-		var albumDetails = $(".image-list-popup");
-		if(albumDetails.length > 0 && albumDetails.find(".item").length > 0){
-			if(detectMobile()){
-				albumDetails.owlCarousel({
-		            autoPlay: false,
-		            pagination : false,
-		            singleItem: true,
-		            navigation: true,
-		            slideSpeed : 800,
-	        		rewindSpeed : 1000,
-		            navigationText: ['<span class="pre"></span>', '<span class="next"></span>']
-				});
-			} else {
-				$(".popup-image").magnificPopup({
-		          type: 'image',
-		          tLoading: 'Loading image #%curr%...',
-		          mainClass: 'mfp-img-mobile',
-		          gallery: {
-		            enabled: true,
-		            navigateByImgClick: true
-		          },
-		          image: {
-		            tError: 'The image could not be loaded.',
-		            titleSrc: function(item) {
-		              return item.el.attr('title');
-		            }
-		          }
-		        });
-			}
-		}		   
 
 		if($("body.home").length > 0 || $("body.page-template-page-gallery").length > 0){
 			//toggleMusic(musicTrigger, true);

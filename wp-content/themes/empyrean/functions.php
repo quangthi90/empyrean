@@ -182,4 +182,28 @@ function getPageLink($page_slug){
     } 
     return home_url();
 }
+function pageLink($page_slug, $text){
+	$page = get_page_by_path($page_slug);
+	$link =home_url();
+    if ($page) {
+        $translationId = pll_get_post($page->ID, pll_current_language());
+		$link = get_page_link($translationId);
+    } 
+    echo "<a href='".$link."'>".pll__($text)."</a>";
+}
+
+function formContactForm($type){
+	$slug = $type.'-'.pll_current_language();
+	$params = array(
+	  'name' => $slug,
+	  'post_type' => 'wpcf7_contact_form',
+	  'numberposts' => -1
+	);
+	$posts = get_posts($params);
+	if($posts){
+		$shortcode = '[contact-form-7 id="'.$posts[0]->ID.'" title="Contact Us"]';
+		echo do_shortcode($shortcode);
+	}
+}
+
 require get_template_directory() . '/inc/template-tags.php';
