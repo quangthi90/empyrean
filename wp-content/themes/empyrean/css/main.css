@@ -729,6 +729,32 @@ MAIN UI
     right: -5px !important;
 }
 
+/*Foo Gallery*/
+.page-template-page-gallery .foogallery-container {
+    margin-bottom: 35px;
+}
+.page-template-page-gallery .foogallery-stack-album {
+}
+.page-template-page-gallery .foogallery-stack-album .topbar {
+    box-shadow: none;
+    border-bottom: 1px solid #C22B18;
+}
+.page-template-page-gallery .foogallery-stack-album .back {
+    color: #C22B18;
+    font-weight: bold;
+    font-size: 16px;
+    background: rgba(200,200,200,0.7);
+}
+.page-template-page-gallery .foogallery-stack-album .topbar h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.page-template-page-gallery .foogallery-stack-album .topbar h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
 /* ===============
     ALL: IE Fixes
    =============== */

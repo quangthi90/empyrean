@@ -80,7 +80,7 @@ function app_setup() {
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu',      'empyrean' )
+		'primary' => __( 'Primary Menu', 'empyrean' )
 	) );
 
 	/*
@@ -169,7 +169,7 @@ function app_scripts() {
 		wp_enqueue_style( 'style-language-my', get_template_directory_uri().'/css/myanmar.css' );
 	}
 
-	wp_enqueue_script( 'app-js-jquery', get_template_directory_uri() . '/js/vendor/jquery-1.11.2.min.js');
+	//wp_enqueue_script( 'app-js-jquery', get_template_directory_uri() . '/js/vendor/jquery-1.11.2.min.js');
 	wp_enqueue_script( 'app-js-popup', get_template_directory_uri() . '/js/vendor/popup/jquery.magnific-popup.min.js' );
 	if ( is_home() ){
 		wp_enqueue_script( 'app-js-backstretch', get_template_directory_uri() . '/js/vendor/jquery.backstretch.min.js' );
