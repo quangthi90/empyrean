@@ -55,6 +55,7 @@ $pile_angles = foogallery_album_template_setting( 'pile_angles', '2' );
 				},
 				onAfterOpen : function( pileName ) {
 					$close.show();
+					//$("[id^='foogallery-stack-album-back-']:visible").not($close).trigger("click");
 				}
 			} );
 

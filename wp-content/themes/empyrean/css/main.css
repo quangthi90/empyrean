@@ -598,20 +598,31 @@ MAIN UI
     margin-bottom: 20px;
     overflow: hidden;
 }
-.contact-form .actions {
-    
+.contact-form .actions {    
 }
-.contact-form .actions .btn-primary {
+.contact-form .actions .wpcf7-submit {
     padding: 10px 50px;
     width: 50%;
+    color: #FFF;
+    background-color: #c22b18;    
+    font-weight: 600;
+    border: none;
+}
+.contact-form .actions .wpcf7-submit:hover {
+    color: #000;
+}
+.contact-form .actions .wpcf7-submit[disabled] {
+    background-color: #b4b4b4;
 }
 
-.contact-form .form-control .control {
-    width: 100%;
-    padding: 15px;
+.contact-form .form-control input {
+    width: 90%;
+    padding: 10px;
 }
-.contact-form .form-control textarea.control {
+.contact-form .form-control textarea {
     height: 88px;
+    width: 90%;
+    padding: 10px;
 }
 
 .page-template-page-gallery .album-category {
@@ -987,7 +998,7 @@ MAIN UI
         width: 100%;
         float: none;
     }
-    .contact-form .actions .btn-primary {
+    .contact-form .actions .wpcf7-submit {
         width: 100%;
     }
 
@@ -1162,6 +1173,11 @@ ul.none-style {
 }
 .table-cell {
     display: table-cell;
+}
+
+input[type='submit'], 
+input[type='button'] {
+    border: none;
 }
 
 .btn {

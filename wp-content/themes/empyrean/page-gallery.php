@@ -4,8 +4,7 @@
 	<div class="main-container <?php post_class(); ?>">         
 	    <div class="main clearfix wrapper">
 	    	<div class="main-top-gap"></div>
-		    <?php
-		    
+		    <?php		    
 		    $args = array(
 				'numberposts' => -1,
 				'post_type'   => FOOGALLERY_CPT_ALBUM,
