@@ -97,7 +97,7 @@ body.page-template-page-designforum{
    =================== */
 .header-container {
     position: relative;    
-    z-index: 99;
+    z-index: 10001;
 }
 .main-container {
     position: relative;
@@ -876,7 +876,14 @@ MAIN UI
         background-position: -300px -15px;
     }
     .footer-container {
-        display: none;
+        bottom: 56px;
+    }
+    .footer-container .footer-links {
+        display: block;
+        text-align: center;
+    }
+    .main-container {
+        padding-bottom: 125px;
     }
     .main {
         padding: 30px 0;
