@@ -97,7 +97,7 @@ body.page-template-page-designforum{
    =================== */
 .header-container {
     position: relative;    
-    z-index: 10001;
+    z-index: 99;
 }
 .main-container {
     position: relative;
@@ -872,6 +872,9 @@ MAIN UI
     /* ==============
         MOBILE: Main
        ============== */
+   .header-container {
+        z-index: 100001;
+   }
     body.page-template-page-gallery {        
         background-position: -300px -15px;
     }

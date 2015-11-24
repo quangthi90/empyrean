@@ -137,11 +137,7 @@ var App = {};
 			$(".office-info").removeClass("hidden");
 		}
 
-		if($("body.home").length > 0 || $("body.page-template-page-gallery").length > 0){
-			toggleMusic(musicTrigger, true);
-		}else{
-			musicTrigger.addClass("off");
-		}		
+		toggleMusic(musicTrigger, true);		
 	}
 
 	function toggleMusic(trigger, forceStart){
