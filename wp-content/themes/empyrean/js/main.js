@@ -48,7 +48,11 @@ var App = {};
 		var overlay = $(".overlay-main");
 
 		musicTrigger.on("click", function(e){
-			toggleMusic($(this));			
+			if($("#videoPlayer").length > 0) {
+				toggleMusicForVideo(musicTrigger);
+			}else{
+				toggleMusic(musicTrigger);
+			}		
 		});
 		controlpanel.hover(function(){
 			controlpanel.removeClass("show");
@@ -137,7 +141,11 @@ var App = {};
 			$(".office-info").removeClass("hidden");
 		}
 
-		toggleMusic(musicTrigger, true);		
+		if($("#videoPlayer").length > 0) {
+			toggleMusicForVideo(musicTrigger, true);
+		}else{
+			toggleMusic(musicTrigger, true);
+		}		
 	}
 
 	function toggleMusic(trigger, forceStart){
@@ -157,6 +165,22 @@ var App = {};
 			player.play();
 		}else{
 			player.pause();
+		}	
+		trigger.toggleClass('off');	
+	}
+
+	function toggleMusicForVideo(trigger, forceStart){
+		if(forceStart){
+			trigger.removeClass("off");
+		}
+
+		var vplayer = window.videoPlayer;
+		if(!vplayer) return;
+
+		if(trigger.hasClass("off")){
+			vplayer.unMute();
+		}else{
+			vplayer.mute();
 		}	
 		trigger.toggleClass('off');	
 	}
