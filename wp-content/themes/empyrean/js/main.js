@@ -128,12 +128,15 @@ var App = {};
         //Background slides
         if($("body.home").length > 0){
         	$.backstretch([
-			    window.THEME_URL + "img/background/welcome.jpg"
-			    , window.THEME_URL +  "img/background/home.jpg"
-			    , window.THEME_URL +  "img/background/about.jpg"
-			    , window.THEME_URL +  "img/background/designforum.jpg"
-			    , window.THEME_URL + "img/background/gallery.jpg"
-			    , window.THEME_URL + "img/background/contact.jpg"
+			    window.THEME_URL + "img/background/china_shanghai_01.jpg"
+			    , window.THEME_URL +  "img/background/china_shanghai_02.jpg"
+			    , window.THEME_URL +  "img/background/idonesia_jakarta.jpg"
+			    , window.THEME_URL +  "img/background/japan_tokyo_1.jpg"
+			    , window.THEME_URL + "img/background/japan_tokyo_2.jpg"
+			    , window.THEME_URL + "img/background/korea_seoul1.jpg"
+			    , window.THEME_URL + "img/background/korea_seoul2.jpg"
+			    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_01.jpg"
+			    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_02.jpg"
 			], {duration: 9000, fade: 1000});
         }		
 
