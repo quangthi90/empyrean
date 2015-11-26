@@ -126,19 +126,29 @@ var App = {};
 		}        
 
         //Background slides
-        if($("body.home").length > 0){
-        	$.backstretch([
-			    window.THEME_URL + "img/background/china_shanghai_01.jpg"
-			    , window.THEME_URL +  "img/background/china_shanghai_02.jpg"
-			    , window.THEME_URL +  "img/background/idonesia_jakarta.jpg"
-			    , window.THEME_URL +  "img/background/japan_tokyo_1.jpg"
-			    , window.THEME_URL + "img/background/japan_tokyo_2.jpg"
-			    , window.THEME_URL + "img/background/korea_seoul1.jpg"
-			    , window.THEME_URL + "img/background/korea_seoul2.jpg"
-			    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_01.jpg"
-			    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_02.jpg"
-			], {duration: 9000, fade: 1000});
-        }		
+        $.backstretch([
+		    window.THEME_URL + "img/background/china_shanghai_01.jpg"
+		    , window.THEME_URL +  "img/background/china_shanghai_02.jpg"
+		    , window.THEME_URL +  "img/background/idonesia_jakarta.jpg"
+		    , window.THEME_URL +  "img/background/japan_tokyo_1.jpg"
+		    , window.THEME_URL + "img/background/japan_tokyo_2.jpg"
+		    , window.THEME_URL + "img/background/korea_seoul1.jpg"
+		    , window.THEME_URL + "img/background/korea_seoul2.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_01.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_02.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_03.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_04.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_05.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_06.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_07.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_08.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_09.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_10.jpg"
+		    , window.THEME_URL + "img/background/yangon_03.jpg"
+		    , window.THEME_URL + "img/background/yangon_04.jpg"    
+		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_01.jpg"
+		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_02.jpg"
+		], {duration: 9000, fade: 1000});		
 
 		if($(".office-info.hidden").length > 0){
 			$(".office-info").removeClass("hidden");

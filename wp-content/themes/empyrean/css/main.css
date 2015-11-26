@@ -71,21 +71,6 @@ body {
       -o-background-size: cover;
     background-size: cover; 
 }
-body.page-template-page-home {
-    background: url(../img/background/home.jpg) no-repeat center center fixed; 
-}
-body.page-template-page-contact{
-    background: url(../img/background/contact.jpg) no-repeat center center fixed; 
-}
-body.page-template-page-aboutus{
-    background: url(../img/background/about.jpg) no-repeat center center fixed; 
-}
-.page-template-page-gallery {
-    background: url(../img/background/gallery.jpg) no-repeat center center fixed; 
-}
-body.page-template-page-designforum{
-    background: url(../img/background/designforum.jpg) no-repeat center center fixed; 
-}
 
 .wrapper {
     width: 90%;
