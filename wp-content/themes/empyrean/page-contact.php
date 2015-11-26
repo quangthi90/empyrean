@@ -67,7 +67,7 @@
 		  	<div class="content-block design-form">
 				 <div class="overlay"></div>
 				   <div class="content-block-details">
-					  <h3 class="title right"><?php pll_e("Job Opportunity") ?></h3>
+					  <h3 class="title"><?php pll_e("Job Opportunity") ?></h3>
 					  <div class="img-wrapper">
 						 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/job_opp.png" alt="lblJobOpportunity">
 					  </div>             
@@ -79,7 +79,7 @@
 		  	<div class="content-block design-form">
 			 	<div class="overlay"></div>
 			   	<div class="content-block-details">
-				    <h3 class="title right"><?php pll_e("Client's Enquiry") ?></h3>
+				    <h3 class="title"><?php pll_e("Client's Enquiry") ?></h3>
 				    <div class="img-wrapper">
 					   <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact.png" alt="lblClientEnquiry">
 				    </div>             

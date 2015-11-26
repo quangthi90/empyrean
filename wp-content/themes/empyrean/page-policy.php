@@ -7,7 +7,7 @@
 	     	<div class="content-block">
 	         	<div class="overlay"></div>                   
 	         	<div class="content-block-details">                    
-	             	<h3 class="title right"><?php pll_e("Policy") ?></h3>                       
+	             	<h3 class="title"><?php pll_e("Policy") ?></h3>                       
 	             	<div class="clear"></div>
 	             	<div class="img-wrapper">
 	                 	<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/policy.png" alt="Policy">

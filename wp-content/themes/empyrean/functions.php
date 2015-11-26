@@ -32,6 +32,9 @@ function registerText(){
 	pll_register_string("forumdesign_objective_content", "The objectives of this design forum is to help build students' confidence in design. <br> We will help them in seeing the physical world in a new realm in order to be more design conscious in problem solving.<br> They will learn through the macro and micro views of components, hence enlarging their perspective in perception in their design concept. </p> <p class='center'> <strong> - When one cannot see beyond the dimensions of life, nothing profitable can be created. - <br> Eric's Haywood Chang's quote </strong> </p> <p> Upon registering with us, students from any design faculty may submit their work for design critics or for discussion.<br> In returned, we will post up these works (after having approval from individual student) for sharing so that more can learn and benefit from it.", $groupLabels, true);
 	pll_register_string("forumdesign_contact_label", "International Design Student Contact", $groupLabels, false);
 	pll_register_string("forumdesign_contact_info", "We would like to know you better, kindly help fill in the as below and all information will be confidential.", $groupLabels, true);
+
+	pll_register_string("about_vision", "About Mision", $groupLabels, true);
+	pll_register_string("about_company", "About Company", $groupLabels, true);
 }
 
 if ( ! function_exists( 'app_setup' ) ) :
