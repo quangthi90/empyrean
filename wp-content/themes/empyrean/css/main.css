@@ -721,6 +721,9 @@ MAIN UI
 }
 
 /*Foo Gallery*/
+#foogallery-gallery-192 .foo-item > a {
+    border: 5px solid #FFF;
+}
 .page-template-page-gallery .foogallery-container {
     margin-bottom: 35px;
 }
