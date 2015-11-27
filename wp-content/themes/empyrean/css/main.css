@@ -1066,7 +1066,7 @@ MAIN UI
         text-align: center;
     }    
     .content-block .img-wrapper img {
-        max-width: 70%;
+        max-width: 100%;
         width: inherit;
     }
     .content-block.design-form .content {
