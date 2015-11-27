@@ -532,6 +532,8 @@ MAIN UI
 .office-list .office {
     position: relative;
     margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
 }
 .office .office-info {
     position: absolute;
@@ -544,6 +546,10 @@ MAIN UI
     background: rgba(0, 0, 0, 0.5);
 }
 
+.office.info-tl .office-info {
+    top: 20px;
+    left: 20px;
+}
 .office.info-bl .office-info {
     bottom: 20px;
     left: 20px;

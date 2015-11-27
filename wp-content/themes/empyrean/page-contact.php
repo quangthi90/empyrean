@@ -5,7 +5,7 @@
 	    <div class="main clearfix wrapper">
 	    	<div class="main-top-gap"></div>
 		    <div class="office-list">
-				<div class="office info-bl">
+				<div class="office info-tl">
 				  <img class="responsive-img office-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact/office_sing.jpg" alt="Singapore office">
 				  <div class="office-info hidden">
 					<div class="office-info-wrapper">
@@ -48,7 +48,7 @@
 					  <h3 class="office-name">China office</h3>
 					  <div class="office-info-item office-address">China, Hainan Province, Haikou City, Yusha Road Jingyu Square Block 2 Unit 1403
 					  </div>
-					  <div class="office-info-item office-contact">
+					  <div class="office-info-item office-contact hidden">
 						<div class="table-row">
 						  <div class="table-cell info-label">
 							Tel/Fax: 
