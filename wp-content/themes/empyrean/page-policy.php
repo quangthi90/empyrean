@@ -5,7 +5,6 @@
 	    <div class="main clearfix wrapper">
 	    	<div class="main-top-gap"></div>
 	     	<div class="content-block">
-	         	<div class="overlay"></div>                   
 	         	<div class="content-block-details">                    
 	             	<h3 class="title"><?php pll_e("Policy") ?></h3>                       
 	             	<div class="clear"></div>

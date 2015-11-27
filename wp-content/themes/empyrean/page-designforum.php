@@ -5,7 +5,6 @@
 	    <div class="main clearfix wrapper">
 	    	<div class="main-top-gap"></div>
 	        <div class="content-block">
-	           <div class="overlay"></div>                   
 	           <div class="content-block-details">
 	               <h3 class="title"><?php pll_e("International Students' Design Forum") ?></h3>
 	               <div class="clear"></div>
@@ -18,7 +17,6 @@
 	           </div>
 	        </div>
 	        <div class="content-block design-form">
-	           <div class="overlay"></div>                   
 	           <div class="content-block-details">
 	               <h3 class="title"><?php pll_e("International Design Student Contact") ?></h3>
 	               <div class="clear"></div>

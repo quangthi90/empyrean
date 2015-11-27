@@ -5,8 +5,7 @@
 	    <div class="main clearfix wrapper">
 		    <div class="main-top-gap"></div>
 			<a name="mission"></a>
-			<div class="content-block">
-				<div class="overlay"></div>
+			<div class="content-block">				
 				<div class="content-block-details">
 					<h3 class="title"><?php pll_e("Our Mission") ?></h3>
 					<div class="clear"></div>
@@ -17,8 +16,7 @@
 				</div>
 			</div>
 			<a name="story"></a>
-			<div class="content-block">
-				<div class="overlay"></div>
+			<div class="content-block">				
 				<div class="content-block-details">
 					<h3 class="title"><?php pll_e("Our Story") ?></h3>
 					<div class="clear"></div>

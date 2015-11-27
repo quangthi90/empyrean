@@ -9,7 +9,6 @@
 				  <img class="responsive-img office-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact/office_sing.jpg" alt="Singapore office">
 				  <div class="office-info hidden">
 					<div class="office-info-wrapper">
-					  <div class="overlay"></div> 
 					  <h3 class="office-name">Singapore office</h3>
 					  <div class="office-info-item office-address">111 North Bridge Road #21-01 Peninsula Plaza Singapore 179098 
 					  </div>
@@ -46,7 +45,6 @@
 				  <img class="responsive-img office-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact/office_china.jpg" alt="China office">
 				  <div class="office-info hidden">
 					<div class="office-info-wrapper">
-					  <div class="overlay"></div>
 					  <h3 class="office-name">China office</h3>
 					  <div class="office-info-item office-address">China, Hainan Province, Haikou City, Yusha Road Jingyu Square Block 2 Unit 1403
 					  </div>
@@ -65,8 +63,7 @@
 				</div>
 		  	</div>  
 		  	<div class="content-block design-form">
-				 <div class="overlay"></div>
-				   <div class="content-block-details">
+				<div class="content-block-details">
 					  <h3 class="title"><?php pll_e("Job Opportunity") ?></h3>
 					  <div class="img-wrapper">
 						 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/job_opp.png" alt="lblJobOpportunity">
@@ -77,8 +74,7 @@
 				 </div>
 		  	</div> 
 		  	<div class="content-block design-form">
-			 	<div class="overlay"></div>
-			   	<div class="content-block-details">
+			 	<div class="content-block-details">
 				    <h3 class="title"><?php pll_e("Client's Enquiry") ?></h3>
 				    <div class="img-wrapper">
 					   <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact.png" alt="lblClientEnquiry">

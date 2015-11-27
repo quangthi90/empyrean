@@ -93,6 +93,7 @@ body {
     width: 100%;
     left: 0;
     bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
 }
 .footer-container footer {
     position: relative;
@@ -309,20 +310,6 @@ MAIN UI
     display: block;
 }
 
-.aboutus .overlay.header-overlay {
-    background-color: #023261;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=35)";
-      /* IE 5-7 */
-    filter: alpha(opacity=35);
-    /* Netscape */
-    -moz-opacity: 0.35;
-    /* Safari 1.x */
-    -khtml-opacity: 0.35;
-    /* Good browsers */
-    opacity: 0.35;
-}
-
 .mobile-controlpanel {
     display: none;
 }
@@ -475,19 +462,9 @@ MAIN UI
     color: #FFF;
     overflow: hidden;
     position: relative;
+    background: rgba(0, 0, 0, 0.3);
 }
-.news-list .news-item .overlay {
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-      /* IE 5-7 */
-    filter: alpha(opacity=40);
-    /* Netscape */
-    -moz-opacity: 0.40;
-    /* Safari 1.x */
-    -khtml-opacity: 0.40;
-    /* Good browsers */
-    opacity: 0.40;
-}
+
 .news-item .news-title {
     margin: 0 0 5px 0;
 }
@@ -511,20 +488,9 @@ MAIN UI
     position: relative;
     padding: 25px;
     overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
 }
-.content-block .overlay {
-    background-color: #FFF;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-      /* IE 5-7 */
-    filter: alpha(opacity=70);
-    /* Netscape */
-    -moz-opacity: 0.70;
-    /* Safari 1.x */
-    -khtml-opacity: 0.70;
-    /* Good browsers */
-    opacity: 0.70;
-}
+
 .content-block .img-wrapper {
     float: left;
     width: 23%;
@@ -573,19 +539,9 @@ MAIN UI
     padding: 20px;
     z-index: 1;
     color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
 }
-.office .office-info .overlay {
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-      /* IE 5-7 */
-    filter: alpha(opacity=50);
-    /* Netscape */
-    -moz-opacity: 0.50;
-    /* Safari 1.x */
-    -khtml-opacity: 0.50;
-    /* Good browsers */
-    opacity: 0.50;
-}
+
 .office.info-bl .office-info {
     bottom: 20px;
     left: 20px;
