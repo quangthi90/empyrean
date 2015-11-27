@@ -64,12 +64,14 @@ body {
     font: 16px/26px Lato, Helvetica, Helvetica Neue, Arial;
     font-weight: 400;
     min-height: 100%;
-    position: relative;   
+    position: relative; 
+    /*  
     background: url(../img/background/china_shanghai_01.jpg) no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
     background-size: cover; 
+    */
 }
 
 .wrapper {

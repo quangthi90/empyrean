@@ -1,6 +1,8 @@
 var App = {};
 (function($){
 	var DEFAULT_LANGUAGE_COOKIE_NAME = "language";
+	var BG_INDEX_COOKIE_NAME = "bgi";
+	var AUDIO_COOKIE_NAME = "aut";
 
 	App.VideoStarted = function(){
 		if(!isMusicOn()) return;
@@ -126,76 +128,71 @@ var App = {};
 		}        
 
         //Background slides
-        $.backstretch([
-		    window.THEME_URL + "img/background/china_shanghai_01.jpg"
-		    , window.THEME_URL +  "img/background/china_shanghai_02.jpg"
-		    , window.THEME_URL +  "img/background/idonesia_jakarta.jpg"
-		    , window.THEME_URL +  "img/background/japan_tokyo_1.jpg"
-		    , window.THEME_URL + "img/background/japan_tokyo_2.jpg"
-		    , window.THEME_URL + "img/background/korea_seoul1.jpg"
-		    , window.THEME_URL + "img/background/korea_seoul2.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_01.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_02.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_03.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_04.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_05.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_06.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_07.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_08.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_09.jpg"
-		    , window.THEME_URL + "img/background/singapore_mbs_10.jpg"
-		    , window.THEME_URL + "img/background/yangon_03.jpg"
-		    , window.THEME_URL + "img/background/yangon_04.jpg"    
-		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_01.jpg"
-		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_02.jpg"
-		], {duration: 9000, fade: 1000});		
+        doBGImages();
 
 		if($(".office-info.hidden").length > 0){
 			$(".office-info").removeClass("hidden");
 		}
 
-		if($("#videoPlayer").length > 0) {
-			toggleMusicForVideo(musicTrigger, true);
-		}else{
-			toggleMusic(musicTrigger, true);
-		}		
+		//Window events
+		$(window).on("backstretch.after", function (e, instance, index) {
+			var player = getPlayer();
+			if(player){
+				App.SetCookie(AUDIO_COOKIE_NAME, player.currentTime, 1);
+			}
+		  	App.SetCookie(BG_INDEX_COOKIE_NAME, index, 1);
+		});	
+
+		setTimeout(function(){
+			if($("#videoPlayer").length > 0) {
+				toggleMusicForVideo(musicTrigger);
+			}else{
+				toggleMusic(musicTrigger);
+				seekAudio();
+			}
+		}, 500);
 	}
 
-	function toggleMusic(trigger, forceStart){
+	function toggleMusic(trigger){
 		var player = getPlayer();		
 		if(!player) {
 			trigger.toggleClass('off');	
 			return;
-		};
-
-		if(forceStart){
-			player.play();
-			trigger.removeClass("off");
-			return;
-		}
-
-		if(trigger.hasClass("off")){
+		};		
+		
+		if(player.paused){
 			player.play();
 		}else{
 			player.pause();
-		}	
-		trigger.toggleClass('off');	
+		}
+
+		if(player.paused) {
+			trigger.addClass("off");
+		}else{			
+			trigger.removeClass("off");
+		}
 	}
 
 	function toggleMusicForVideo(trigger, forceStart){
-		if(forceStart){
-			trigger.removeClass("off");
-		}
-
 		var vplayer = window.videoPlayer;
-		if(!vplayer) return;
+		if(!vplayer || !vplayer.isMuted) return;
 
-		if(trigger.hasClass("off")){
+		var state = vplayer.getPlayerState ? vplayer.getPlayerState() : 1;
+		if(state != 1){
+			vplayer.playVideo();
+		}		
+
+		if(vplayer.isMuted()) {
 			vplayer.unMute();
 		}else{
 			vplayer.mute();
 		}	
-		trigger.toggleClass('off');	
+		
+		if(vplayer.isMuted()){
+			trigger.removeClass("off");
+		}else{
+			trigger.addClass("off");
+		}
 	}
 
 	function changeLanguage(code){
@@ -219,6 +216,58 @@ var App = {};
 
 	function isMusicOn(){
 		return !$(".music-trigger").hasClass("off");
+	}
+
+	function doBGImages(){
+		var savedIndex = parseInt(App.GetCookie(BG_INDEX_COOKIE_NAME));
+		savedIndex = savedIndex || 0;
+
+		var tempImages = [
+		    window.THEME_URL + "img/background/china_shanghai_01.jpg"
+		    , window.THEME_URL +  "img/background/china_shanghai_02.jpg"
+		    , window.THEME_URL +  "img/background/idonesia_jakarta.jpg"
+		    , window.THEME_URL +  "img/background/japan_tokyo_1.jpg"
+		    , window.THEME_URL + "img/background/japan_tokyo_2.jpg"
+		    , window.THEME_URL + "img/background/korea_seoul1.jpg"
+		    , window.THEME_URL + "img/background/korea_seoul2.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_01.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_02.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_03.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_04.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_05.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_06.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_07.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_08.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_09.jpg"
+		    , window.THEME_URL + "img/background/singapore_mbs_10.jpg"
+		    , window.THEME_URL + "img/background/yangon_03.jpg"
+		    , window.THEME_URL + "img/background/yangon_04.jpg"    
+		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_01.jpg"
+		    , window.THEME_URL + "img/background/vietnam_hcm_bitexco_financial_centre_02.jpg"
+		];
+		
+		var images = [];
+		if(savedIndex <= 0){
+			images = tempImages;
+		}else{			
+			for (var i = savedIndex; i < tempImages.length; i++) {
+				images.push(tempImages[i]);
+			};
+			for (var i = 0; i < savedIndex; i++) {
+				images.push(tempImages[i]);
+			};
+		}		
+		$.backstretch(images, {duration: 7000, fade: 1000});	
+	}
+
+	function seekAudio(){
+		var player = getPlayer();
+		if(!player) return;
+
+		var savedTime = parseFloat(App.GetCookie(AUDIO_COOKIE_NAME)) || 0;	
+		if(savedTime > 1 && player.seekable.length > 0) {
+			player.currentTime = savedTime;
+		}
 	}
 
 })(jQuery);
