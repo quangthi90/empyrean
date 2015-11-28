@@ -549,6 +549,7 @@ MAIN UI
 .office.info-tl .office-info {
     top: 20px;
     left: 20px;
+    right: 20px;
 }
 .office.info-bl .office-info {
     bottom: 20px;
@@ -556,7 +557,9 @@ MAIN UI
 }
 .office.info-tr .office-info {
     top: 20px;
-    right: 20px;    
+    right: 20px;
+    left: 20px;
+    text-align: right;    
 }
 .office-info .office-name {
     margin: 0 10px 15px 0;
@@ -823,6 +826,32 @@ MAIN UI
         padding-bottom: 125px;
     }
 
+    .office .office-info {
+        position: relative;
+    }
+    .office.info-tl .office-info {
+        top: inherit;
+        left: inherit;
+        right: inherit;
+    }
+    .office.info-bl .office-info {
+        bottom: inherit;
+        left: inherit;
+        right: inherit;
+    }
+    .office.info-tr .office-info {
+        top: inherit;
+        right: inherit;
+        left: inherit;
+    }
+    .office.info-bl .office-info,
+    .office.info-tr .office-info {
+        left: inherit;
+        top: inherit;
+        bottom: inherit;
+        right: inherit;
+    }
+
     .content-block .title {
         text-align: center;
         width: 100%;
@@ -841,7 +870,7 @@ MAIN UI
     .content-block.design-form .content {
         width: 100%;
         float: none;
-    }  
+    }
 
     .table-content {
         display: block;
@@ -1045,15 +1074,8 @@ MAIN UI
     .mobile-controlpanel .language-control .language-list li a.active {
         color: white;
         background-color: #333;
-    }    
-
-    .office.info-bl .office-info,
-    .office.info-tr .office-info {
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
     }
+
     .content-block .title {
         text-align: center;
         width: 100%;
@@ -1079,11 +1101,6 @@ MAIN UI
 
     .page-title {
         text-align: center;
-    }
-
-    .office-list .office .office-img {
-        height: 226px;
-        width: 100%;
     }
 
     .page-template-page-gallery .item-list .item {
