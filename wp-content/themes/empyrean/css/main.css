@@ -152,7 +152,7 @@ body {
     background: transparent url('../img/play_hover.png') no-repeat;
 }
 
-.home .main.wrapper {
+.page-template-page-home .main.wrapper {
     width: 80%;
 }
 #videoPlayer {
@@ -537,6 +537,9 @@ MAIN UI
 }
 .office .office-info {
     position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
 }
 .office .office-info .office-info-wrapper {
     position: relative;
@@ -546,21 +549,6 @@ MAIN UI
     background: rgba(0, 0, 0, 0.5);
 }
 
-.office.info-tl .office-info {
-    top: 20px;
-    left: 20px;
-    right: 20px;
-}
-.office.info-bl .office-info {
-    bottom: 20px;
-    left: 20px;
-}
-.office.info-tr .office-info {
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    text-align: right;    
-}
 .office-info .office-name {
     margin: 0 10px 15px 0;
 }
@@ -799,7 +787,7 @@ MAIN UI
         width: 100%;
     }   
        
-    .home .news-list .news-item {
+    .page-template-page-home .news-list .news-item {
         width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
@@ -813,7 +801,7 @@ MAIN UI
         margin: 1%;
     }
 
-    .home .main.wrapper  {
+    .page-template-page-home .main.wrapper  {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -828,30 +816,10 @@ MAIN UI
 
     .office .office-info {
         position: relative;
-    }
-    .office.info-tl .office-info {
         top: inherit;
         left: inherit;
         right: inherit;
     }
-    .office.info-bl .office-info {
-        bottom: inherit;
-        left: inherit;
-        right: inherit;
-    }
-    .office.info-tr .office-info {
-        top: inherit;
-        right: inherit;
-        left: inherit;
-    }
-    .office.info-bl .office-info,
-    .office.info-tr .office-info {
-        left: inherit;
-        top: inherit;
-        bottom: inherit;
-        right: inherit;
-    }
-
     .content-block .title {
         text-align: center;
         width: 100%;
@@ -893,6 +861,9 @@ MAIN UI
     .table-content  .table-cell.col-content {
         vertical-align: top;
         margin: 20px 0;
+    }
+    .owl-theme .owl-controls .owl-nav {
+        display: none;
     }
 }
 

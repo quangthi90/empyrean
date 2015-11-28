@@ -43,6 +43,10 @@ var App = {};
 
 	$(document).ready(init);
 	function init(){
+		if($(".office-info.hidden").length > 0){
+			$(".office-info").removeClass("hidden");
+		}
+
 		var musicTrigger = $(".music-trigger");
 		var controlpanel = $(".controlpanel");	
 		var languageControl = $(".language-control");
@@ -129,10 +133,6 @@ var App = {};
 
         //Background slides
         doBGImages();
-
-		if($(".office-info.hidden").length > 0){
-			$(".office-info").removeClass("hidden");
-		}
 
 		//Window events
 		$(window).on("backstretch.after", function (e, instance, index) {
