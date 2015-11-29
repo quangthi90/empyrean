@@ -13,6 +13,7 @@ function registerText(){
 	pll_register_string("contact", "Contact", $groupPageTitle, false);
 	pll_register_string("policy", "Policy", $groupPageTitle, false);
 
+	pll_register_string("shaping_our_future_today", "Shaping our future today", $groupLabels, false);
 	pll_register_string("our_mission", "Our Mission", $groupLabels, false);
 	pll_register_string("our_mission_content", "It is our belief that nothing exists by itself in this world. We co-exist with one another and we are interdependent on one another. This creates greater dimension and contributes colours to the earth. Good designs are not good enough; a great product is one that will be able to sell itself. We believe that the design that sells is the design that is most relevant and appealing to the consumer...", $groupContent, true);
 	pll_register_string("our_story", "Our Story", $groupLabels, false);

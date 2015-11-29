@@ -10,7 +10,7 @@
             <?php echo do_shortcode('[foogallery id="192"]') ?>
         </div>
         <div class="news-list wrapper">
-            <h2 class="header"><?php pll_e("About Us") ?></h2>            
+            <h2 class="header"><?php pll_e("Shaping our future today") ?></h2>         
             <div class="item-list">
                 <div class="news-item">
                     <div class="overlay">     
