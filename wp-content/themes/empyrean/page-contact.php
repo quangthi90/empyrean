@@ -4,6 +4,31 @@
 	<div class="main-container <?php post_class(); ?>">         
 	    <div class="main clearfix wrapper">
 	    	<div class="main-top-gap"></div>
+	    	<div class="content-block design-form">
+			 	<div class="content-block-details">
+				    <h3 class="title"><?php pll_e("Client's Enquiry") ?></h3>
+				    <div class="img-wrapper">
+					   <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact.png" alt="lblClientEnquiry">
+				    </div>             
+				    <div class="content">
+					  <div class="contact-form">
+					  	<p class="note"><?php pll_e("* All information will be kept confidential and will not be used by any third party.") ?></p>
+						<?php formContactForm('contact-us') ?>
+					  </div>
+				   	</div>
+			   	</div>
+		  	</div>
+		  	<div class="content-block design-form">
+				<div class="content-block-details">
+					  <h3 class="title"><?php pll_e("Job Opportunity") ?></h3>
+					  <div class="img-wrapper">
+						 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/job_opp.png" alt="lblJobOpportunity">
+					  </div>             
+					  <div class="content">			  
+						  <?php pll_e("We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a>") ?>
+					  </div>
+				 </div>
+		  	</div> 
 		    <div class="office-list">
 				<div class="office info-tl">
 				  <img class="responsive-img office-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact/office_sing.jpg" alt="Singapore office">
@@ -61,31 +86,6 @@
 					</div>                                         
 				  </div>
 				</div>
-		  	</div>  
-		  	<div class="content-block design-form">
-				<div class="content-block-details">
-					  <h3 class="title"><?php pll_e("Job Opportunity") ?></h3>
-					  <div class="img-wrapper">
-						 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/job_opp.png" alt="lblJobOpportunity">
-					  </div>             
-					  <div class="content">			  
-						  <?php pll_e("We are actively recruiting new staff for our business expansion or forming of a new division. You may be an office staff or designer or a project manager. <br/>Interested personal may email to us direct at: <a href='mailto: hr@empyreandesign.com'>hr@empyreandesign.com</a>") ?>
-					  </div>
-				 </div>
-		  	</div> 
-		  	<div class="content-block design-form">
-			 	<div class="content-block-details">
-				    <h3 class="title"><?php pll_e("Client's Enquiry") ?></h3>
-				    <div class="img-wrapper">
-					   <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/contact.png" alt="lblClientEnquiry">
-				    </div>             
-				    <div class="content">
-					  <div class="contact-form">
-					  	<p class="note"><?php pll_e("* All information will be kept confidential and will not be used by any third party.") ?></p>
-						<?php formContactForm('contact-us') ?>
-					  </div>
-				   	</div>
-			   	</div>
 		  	</div>
 	    </div>
     </div>
