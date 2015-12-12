@@ -52,6 +52,8 @@ var App = {};
 		var languageControl = $(".language-control");
 		var menu = $(".menu");
 		var overlay = $(".overlay-main");
+		var controlpanelTrigger = controlpanel.find(".trigger");
+		var timerControlPanel = 0;
 
 		musicTrigger.on("click", function(e){
 			if($("#videoPlayer").length > 0) {
@@ -60,11 +62,19 @@ var App = {};
 				toggleMusic(musicTrigger);
 			}		
 		});
-		controlpanel.hover(function(){
-			controlpanel.removeClass("show");
-		}, function(){
-			controlpanel.addClass("show");
+
+		controlpanelTrigger.click(function(){
+			clearTimeout(timerControlPanel);
+			if(controlpanel.hasClass("show")){
+				controlpanel.removeClass("show");
+				timerControlPanel = setTimeout(function(){
+					controlpanel.addClass("show");	
+				}, 2000);
+			}else{
+				controlpanel.addClass("show");	
+			}
 		});
+
 		languageControl.find(".language-trigger").on("click", function(e){
 			if(menu.hasClass("show")){
 				menu.removeClass("show");
