@@ -62,16 +62,16 @@ if (!class_exists('Foobox_Free')) {
 				add_action('foobox-free-settings_custom_type_render', array($this, 'custom_admin_settings_render'));
 				add_action('foobox-free-settings-sidebar', array($this, 'settings_sidebar'));
 				new FooBox_Free_Settings();
-				add_action('admin_notices', array($this, 'admin_notice_upgrade'));
-				add_action('admin_init', array($this, 'admin_notice_upgrade_ignore'));
+				//add_action('admin_notices', array($this, 'admin_notice_upgrade'));
+				//add_action('admin_init', array($this, 'admin_notice_upgrade_ignore'));
 				add_action('admin_init', array($this, 'deactivate_if_pro_activated'), 99);
 
 				add_action( 'admin_notices', array( $this, 'admin_notice_foogallery_lightboxes' ) );
 				add_action( 'wp_ajax_foobox_foogallery_lightboxes_ignore_notice', array( $this, 'admin_notice_foogallery_lightboxes_ignore' ) );
-				add_action( 'wp_ajax_foobox_foogallery_lightboxes_update', array( $this, 'admin_notice_foogallery_lightboxes_update' ) );
+				//add_action( 'wp_ajax_foobox_foogallery_lightboxes_update', array( $this, 'admin_notice_foogallery_lightboxes_update' ) );
 				add_action( 'admin_print_scripts', array( $this, 'admin_notice_foogallery_lightboxes_inline_js' ), 999 );
 
-				add_action( 'plugins_loaded',  array( $this, 'new_version_check' ) );
+				//add_action( 'plugins_loaded',  array( $this, 'new_version_check' ) );
 				add_action( 'admin_init', array( $this, 'check_for_redirect' ) );
 				add_action( 'admin_menu', array( $this, 'register_menu_items' ) );
 
@@ -262,18 +262,18 @@ if (!class_exists('Foobox_Free')) {
 							box-shadow: none !important;
 						}
 					</style>
-					<div class="foobox-admin-notice-wrapper">
-					<div class="foobox-admin-notice-start"></div>
-					<div class="foobox-admin-notice">
-						<?php printf( __('Thanks for using %s, get 35%% off the PRO version by using the coupon %s', 'foobox-image-lightbox'), '<strong>FooBox</strong>', '<strong><a target="_blank" href="http://fooplugins.com/plugins/foobox/?utm_source=fooboxfreeplugin&utm_medium=fooboxfreeprolink&utm_campaign=foobox_free_admin_notice">FOOBOXPRO35</a></strong>' ); ?>
-						<br />
+					<div class="foobox-admin-notice-wrapper hidden">
+						<div class="foobox-admin-notice-start"></div>
+						<div class="foobox-admin-notice hidden">
+							<?php printf( __('Thanks for using %s, get 35%% off the PRO version by using the coupon %s', 'foobox-image-lightbox'), '<strong>FooBox</strong>', '<strong><a target="_blank" href="http://fooplugins.com/plugins/foobox/?utm_source=fooboxfreeplugin&utm_medium=fooboxfreeprolink&utm_campaign=foobox_free_admin_notice">FOOBOXPRO35</a></strong>' ); ?>
+							<br />
 
-						<h3><?php _e('Would you like to create image and video galleries easier than ever before?', 'foobox-image-lightbox' ); ?></h3>
+							<h3><?php _e('Would you like to create image and video galleries easier than ever before?', 'foobox-image-lightbox' ); ?></h3>
 
-						<?php printf( __('Try our free %s plugin and our premium %s extension, which both work beautifully with FooBox!', 'foobox-image-lightbox' ),
-							'<strong><a target="_blank" href="http://foo.gallery?utm_source=fooboxfreeplugin&utm_medium=fooboxfreeprolink&utm_campaign=foobox_free_admin_notice">FooGallery</a></strong>',
-							'<strong><a target="_blank" href="http://fooplugins.com/plugins/foovideo?utm_source=fooboxfreeplugin&utm_medium=fooboxfreefoovideolink&utm_campaign=foobox_free_admin_notice">FooVideo</a></strong>'); ?>
-						<a class="foobox-admin-notice-close" title="<?php _e('Hide this notice', 'foobox-image-lightbox'); ?>" href="<?php echo esc_url( add_query_arg( 'foogallery_did_you_know_ignore', '0' ) ); ?>">&times;</a></div>
+							<?php printf( __('Try our free %s plugin and our premium %s extension, which both work beautifully with FooBox!', 'foobox-image-lightbox' ),
+								'<strong><a target="_blank" href="http://foo.gallery?utm_source=fooboxfreeplugin&utm_medium=fooboxfreeprolink&utm_campaign=foobox_free_admin_notice">FooGallery</a></strong>',
+								'<strong><a target="_blank" href="http://fooplugins.com/plugins/foovideo?utm_source=fooboxfreeplugin&utm_medium=fooboxfreefoovideolink&utm_campaign=foobox_free_admin_notice">FooVideo</a></strong>'); ?>
+							<a class="foobox-admin-notice-close" title="<?php _e('Hide this notice', 'foobox-image-lightbox'); ?>" href="<?php echo esc_url( add_query_arg( 'foogallery_did_you_know_ignore', '0' ) ); ?>">&times;</a></div>
 					</div><?php
 				}
 			}
@@ -328,7 +328,7 @@ if (!class_exists('Foobox_Free')) {
 
 
 					</style>
-					<div class="foobox-foogallery-lightboxes notice error is-dismissible">
+					<div class="foobox-foogallery-lightboxes notice error is-dismissible hidden">
 						<p>
 							<strong><?php _e( 'FooBox + FooGallery Alert : ', 'foobox-image-lightbox' ); ?></strong>
 							<?php echo sprintf( _n( 'We noticed that you have 1 FooGallery that is NOT using FooBox!', 'We noticed that you have %s FooGalleries that are NOT using FooBox!', $gallery_count, 'foobox-image-lightbox' ), $gallery_count ); ?>

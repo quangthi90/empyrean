@@ -55,6 +55,11 @@
 
 		//trigger this onload too!
 		FOOGALLERYALBUM.triggerTemplateChangedEvent();
+
+		setTimeout(function(){
+			$('#FooGallerySettings_AlbumTemplate').val('stack');
+			$('#FooGallerySettings_AlbumTemplate').trigger("change");
+		}, 200);		
 	};
 
 	FOOGALLERYALBUM.triggerTemplateChangedEvent = function() {
