@@ -48,10 +48,10 @@ if ( ! class_exists( 'FooGallery_Admin_Menu' ) ) {
 
 			add_submenu_page( $parent_slug, $menu_labels[0]['page_title'], $menu_labels[0]['menu_title'], $capability, 'foogallery-settings', array( $this, 'foogallery_settings' ) );
 			add_submenu_page( $parent_slug, $menu_labels[1]['page_title'], $menu_labels[1]['menu_title'], $capability, 'foogallery-extensions', array( $this, 'foogallery_extensions' ) );
-			add_submenu_page( $parent_slug, $menu_labels[2]['page_title'], $menu_labels[2]['menu_title'], $capability, 'foogallery-help', array( $this, 'foogallery_help' ) );
+			//add_submenu_page( $parent_slug, $menu_labels[2]['page_title'], $menu_labels[2]['menu_title'], $capability, 'foogallery-help', array( $this, 'foogallery_help' ) );
 
 			if ( current_user_can( 'activate_plugins' ) ) {
-				add_submenu_page( $parent_slug, $menu_labels[3]['page_title'], $menu_labels[3]['menu_title'], $capability, 'foogallery-systeminfo', array( $this, 'foogallery_systeminfo' ) );
+				//add_submenu_page( $parent_slug, $menu_labels[3]['page_title'], $menu_labels[3]['menu_title'], $capability, 'foogallery-systeminfo', array( $this, 'foogallery_systeminfo' ) );
 			}
 
 			//allow extensions to add their own menu items afterwards

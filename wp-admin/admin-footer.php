@@ -98,10 +98,26 @@ if ( function_exists('get_site_option') ) {
 <script type="text/javascript">
 	if(typeof wpOnload=='function')wpOnload();
 	jQuery("#wp-admin-bar-wp-logo").remove();
-	jQuery(".menu-icon-post").hide(0);
-	jQuery(".menu-icon-comments").hide(0);
-	jQuery(".menu-icon-plugins").hide(0);
-	jQuery(".menu-icon-dashboard > ul.wp-submenu-wrap").hide(0);
+	jQuery("#wp-admin-bar-updates").remove();
+	jQuery("#wp-admin-bar-comments").remove();
+	jQuery("#wp-admin-bar-new-content").remove();
+
+	jQuery("#menu-dashboard").remove();
+	jQuery("#menu-posts").remove();
+	jQuery("#menu-comments").remove();
+	jQuery("#menu-plugins").remove();
+	jQuery("#menu-tools").remove();
+	jQuery("#menu-pages").remove();
+	jQuery("#menu-appearance").remove();
+
+	jQuery('#menu-settings a[href="options-reading.php"]').remove();
+	jQuery('#menu-settings a[href="options-writing.php"]').remove();
+	jQuery('#menu-settings a[href="options-discussion.php"]').remove();
+	jQuery('#menu-settings a[href="options-media.php"]').remove();
+	jQuery('#menu-settings a[href="options-general.php?page=foobox-free"]').remove();
+
+	jQuery("#menu-media ul > li > a[href='upload.php?page=foogallery-help']").remove();
+	jQuery("#menu-media ul > li > a[href='upload.php?page=foogallery-extensions']").hide(0);
 </script>
 </body>
 </html>

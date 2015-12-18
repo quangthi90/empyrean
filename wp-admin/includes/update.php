@@ -182,6 +182,9 @@ function find_core_update( $version, $locale ) {
  * @return string
  */
 function core_update_footer( $msg = '' ) {
+	//WM Updated
+	return;
+
 	if ( !current_user_can('update_core') )
 		return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) );
 
@@ -217,6 +220,9 @@ function core_update_footer( $msg = '' ) {
  * @return false|void
  */
 function update_nag() {
+	//WM Updated
+	return;
+
 	if ( is_multisite() && !current_user_can('update_core') )
 		return false;
 
@@ -240,6 +246,8 @@ function update_nag() {
 
 // Called directly from dashboard
 function update_right_now_message() {
+	//WM Updated;
+	return;
 	$theme_name = wp_get_theme();
 	if ( current_user_can( 'switch_themes' ) ) {
 		$theme_name = sprintf( '<a href="themes.php">%1$s</a>', $theme_name );

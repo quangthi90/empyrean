@@ -11,11 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/apple-touch-icon.png">
     <link rel="icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico" type="image/x-icon" />      
-
-    <?php if($code == 'MY'){ ?>
-    <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/myanmar.css">        
-    <?php } ?>
-    
+  
     <script type="text/javascript">
     window.THEME_URL = '<?php echo esc_url( get_template_directory_uri() ); ?>/';
     </script>

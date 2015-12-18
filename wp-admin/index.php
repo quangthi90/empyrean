@@ -1,3 +1,4 @@
+<?php header("Location: /wp-admin/upload.php") ?>
 <?php
 /**
  * Dashboard Administration Screen
