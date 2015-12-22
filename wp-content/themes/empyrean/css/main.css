@@ -226,6 +226,16 @@ body {
     margin: 0;   
 }
 
+#foogallery-gallery-191 .foo-item {
+    border: 5px solid #fff;
+}
+#foogallery-gallery-191 div.owl-prev {
+    left: 0;
+}
+#foogallery-gallery-191 div.owl-next {
+    right: 0;
+}
+
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
