@@ -14,6 +14,7 @@
   
     <script type="text/javascript">
         window.THEME_URL = '<?php echo esc_url( get_template_directory_uri() ); ?>/';
+        window.DOMAIN_URL = '<?php echo esc_url( home_url( '/' ) ); ?>';
         document.onmousedown = function(e){
             if(e.button == 2)
             {

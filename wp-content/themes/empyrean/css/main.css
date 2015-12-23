@@ -170,6 +170,32 @@ body {
     width: 100%;
     height: 100%;
 }
+#video-close {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 1px;
+    height: 46px;
+    text-align: right;
+    z-index: 1;
+}
+#video-close .close-trigger {
+    float: right;
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    background: transparent url('../img/close.png') no-repeat 50% 50%;
+    opacity: 0.6;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+#video-close .close-trigger:hover {
+    opacity: 1;
+}
 
 .owl-carousel {
     border: none;
