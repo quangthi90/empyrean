@@ -172,12 +172,19 @@ body {
 }
 #video-close {
     position: absolute;
-    top: 0;
-    left: 0px;
-    right: 1px;
+    top: 3px;
+    right: 45px;
     height: 46px;
     text-align: right;
     z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+}
+#videoPlayer:hover #video-close {
+    opacity: 1;
 }
 #video-close .close-trigger {
     float: right;
@@ -186,15 +193,7 @@ body {
     width: 24px;
     height: 24px;
     padding: 10px;
-    background: transparent url('../img/close.png') no-repeat 50% 50%;
-    opacity: 0.6;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-}
-#video-close .close-trigger:hover {
-    opacity: 1;
+    background: transparent url('../img/close-circle.png') no-repeat 50% 50%;
 }
 
 .owl-carousel {

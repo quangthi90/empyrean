@@ -2,8 +2,8 @@
 	<div class="main-container">         
 	    <div class="main wrapper clearfix">
 		    <div id="videoPlayer">
-          <div id="video-close">
-            <span class="close-trigger"></span>
+          <div id="video-close" class="invisible">
+            <span class="close-trigger" title="Close video"></span>
           </div>
 		    	<div id="ytplayer">		    		
 		    	</div>
@@ -30,8 +30,9 @@
           			autoplay: 1,
           			enablejsapi: 1,
           			loop: 1,
-                showinfo : 0,
+                //showinfo : 0,
                 autohide : 1,
+                modestbranding: 0,
           			listType: 'playlist',
           			playlist: 'k_h4AYBZ_4Q'
           		}
@@ -39,9 +40,9 @@
       	}
       	function onPlayerReady(e) {
         	e.target.playVideo();
+          jQuery("#video-close").removeClass("invisible");
           jQuery("#video-close .close-trigger").on("click", function(){
-            var homeUrl = jQuery(".nav-link > li:first a").attr("href") || (window.DOMAIN_URL + '/home');
-            location.href = homeUrl;
+            jQuery("#videoPlayer").remove();
           });
       	}
 
